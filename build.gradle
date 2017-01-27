@@ -15,18 +15,25 @@ repositories {
     // Use 'jcenter' for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.7.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.7.2'
+	compile 'org.apache.servicemix.logging:logging:7.0.0'
+	compile 'org.apache.directory.daemon:daemon-plugin:1.1.8'
     compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
     compile 'com.google.guava:guava:20.0'
-    compile 'org.slf4j:slf4j-api:1.7.21'
+    //compile 'org.slf4j:slf4j-api:1.7.21'
     compile 'com.google.code.findbugs:jsr305:3.0.0'
     compile 'org.json:json:20160810' // provided by Android
     compile 'net.sf.kxml:kxml2:2.3.0' // provided by Android
+	compile group: 'io.netty', name: 'netty-all', version: '4.0.34.Final'
     testCompile 'junit:junit:4.12'
     testRuntime 'org.slf4j:slf4j-jdk14:1.7.21'
     // Declare the dependency for your favourite test framework you want to use in your tests.

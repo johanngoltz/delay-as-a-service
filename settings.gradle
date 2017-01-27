@@ -18,4 +18,4 @@ include 'services:webservice'
 
 include 'public-transport-enabler'
 
-rootProject.name = 'DelayAsAService'
+rootProject.name = 'delay-as-a-service'
