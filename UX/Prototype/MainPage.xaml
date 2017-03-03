@@ -5,11 +5,10 @@
     xmlns:local="using:Prototype"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    RequestedTheme="Dark">
+    mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" Text="Hallo Welt!" VerticalAlignment="Center" HorizontalAlignment="Center" d:LayoutOverrides="Width"/>
+        <TextBlock x:Name="textBlock" Text="Hallo Welt!" VerticalAlignment="Center" HorizontalAlignment="Center" d:LayoutOverrides="Width" Width="Auto"/>
 
     </Grid>
 </Page>
