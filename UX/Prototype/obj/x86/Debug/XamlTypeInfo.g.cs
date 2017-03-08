@@ -156,7 +156,7 @@ namespace Prototype.Prototype_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Prototype.CreateAlarmPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -167,11 +167,19 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeNameTable[7] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
             _typeNameTable[8] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
             _typeNameTable[9] = "Blend.SampleData.SampleDataSource.AlarmsItem";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "Prototype.ScrollModeConverter";
-            _typeNameTable[12] = "Prototype.MainPage";
+            _typeNameTable[10] = "Blend.SampleData.SampleDataSource.Route";
+            _typeNameTable[11] = "Blend.SampleData.SampleDataSource.Time";
+            _typeNameTable[12] = "Prototype.ScrollModeConverter";
+            _typeNameTable[13] = "Prototype.MainPage";
+            _typeNameTable[14] = "String";
+            _typeNameTable[15] = "Blend.SampleData.SampleDataSource.Interval";
+            _typeNameTable[16] = "Blend.SampleData.SampleDataSource.Departure";
+            _typeNameTable[17] = "Blend.SampleData.SampleDataSource.Days";
+            _typeNameTable[18] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>";
+            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>";
+            _typeNameTable[20] = "Blend.SampleData.SampleDataSource.DaysItem";
 
-            _typeTable = new global::System.Type[13];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Prototype.CreateAlarmPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -182,9 +190,17 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeTable[7] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
             _typeTable[8] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
             _typeTable[9] = typeof(global::Blend.SampleData.SampleDataSource.AlarmsItem);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::Prototype.ScrollModeConverter);
-            _typeTable[12] = typeof(global::Prototype.MainPage);
+            _typeTable[10] = typeof(global::Blend.SampleData.SampleDataSource.Route);
+            _typeTable[11] = typeof(global::Blend.SampleData.SampleDataSource.Time);
+            _typeTable[12] = typeof(global::Prototype.ScrollModeConverter);
+            _typeTable[13] = typeof(global::Prototype.MainPage);
+            _typeTable[14] = typeof(global::System.String);
+            _typeTable[15] = typeof(global::Blend.SampleData.SampleDataSource.Interval);
+            _typeTable[16] = typeof(global::Blend.SampleData.SampleDataSource.Departure);
+            _typeTable[17] = typeof(global::Blend.SampleData.SampleDataSource.Days);
+            _typeTable[18] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>);
+            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>);
+            _typeTable[20] = typeof(global::Blend.SampleData.SampleDataSource.DaysItem);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -226,8 +242,16 @@ namespace Prototype.Prototype_XamlTypeInfo
         private object Activate_7_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
         private object Activate_8_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
         private object Activate_9_AlarmsItem() { return new global::Blend.SampleData.SampleDataSource.AlarmsItem(); }
-        private object Activate_11_ScrollModeConverter() { return new global::Prototype.ScrollModeConverter(); }
-        private object Activate_12_MainPage() { return new global::Prototype.MainPage(); }
+        private object Activate_10_Route() { return new global::Blend.SampleData.SampleDataSource.Route(); }
+        private object Activate_11_Time() { return new global::Blend.SampleData.SampleDataSource.Time(); }
+        private object Activate_12_ScrollModeConverter() { return new global::Prototype.ScrollModeConverter(); }
+        private object Activate_13_MainPage() { return new global::Prototype.MainPage(); }
+        private object Activate_15_Interval() { return new global::Blend.SampleData.SampleDataSource.Interval(); }
+        private object Activate_16_Departure() { return new global::Blend.SampleData.SampleDataSource.Departure(); }
+        private object Activate_17_Days() { return new global::Blend.SampleData.SampleDataSource.Days(); }
+        private object Activate_18_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
+        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
+        private object Activate_20_DaysItem() { return new global::Blend.SampleData.SampleDataSource.DaysItem(); }
         private void VectorAdd_6_Alarms(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
@@ -244,6 +268,24 @@ namespace Prototype.Prototype_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
             var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_Days(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_18_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_19_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
             collection.Add(newItem);
         }
 
@@ -316,27 +358,91 @@ namespace Prototype.Prototype_XamlTypeInfo
             case 9:   //  Blend.SampleData.SampleDataSource.AlarmsItem
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_9_AlarmsItem;
-                userType.AddMemberName("DepartureTime");
+                userType.AddMemberName("Route");
+                userType.AddMemberName("Time");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Blend.SampleData.SampleDataSource.Route
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_10_Route;
                 userType.AddMemberName("BeginStation");
                 userType.AddMemberName("EndStation");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
-                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  Prototype.ScrollModeConverter
+            case 11:   //  Blend.SampleData.SampleDataSource.Time
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_ScrollModeConverter;
+                userType.Activator = Activate_11_Time;
+                userType.AddMemberName("Interval");
+                userType.AddMemberName("Departure");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Prototype.MainPage
+            case 12:   //  Prototype.ScrollModeConverter
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_12_ScrollModeConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Prototype.MainPage
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_MainPage;
+                userType.Activator = Activate_13_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  String
+                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 15:   //  Blend.SampleData.SampleDataSource.Interval
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_Interval;
+                userType.AddMemberName("Days");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Blend.SampleData.SampleDataSource.Departure
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_16_Departure;
+                userType.AddMemberName("Earliest");
+                userType.AddMemberName("Latest");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Blend.SampleData.SampleDataSource.Days
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>"));
+                userType.CollectionAdd = VectorAdd_17_Days;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>"));
+                userType.Activator = Activate_18_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_18_ObservableCollection;
+                xamlType = userType;
+                break;
+
+            case 19:   //  System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_19_Collection;
+                userType.CollectionAdd = VectorAdd_19_Collection;
+                xamlType = userType;
+                break;
+
+            case 20:   //  Blend.SampleData.SampleDataSource.DaysItem
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_20_DaysItem;
+                userType.AddMemberName("Name");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -404,35 +510,100 @@ namespace Prototype.Prototype_XamlTypeInfo
             var that = (global::Blend.SampleData.SampleDataSource.SampleDataSource)instance;
             return that.Alarms;
         }
-        private object get_1_AlarmsItem_DepartureTime(object instance)
+        private object get_1_AlarmsItem_Route(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            return that.DepartureTime;
+            return that.Route;
         }
-        private void set_1_AlarmsItem_DepartureTime(object instance, object Value)
+        private void set_1_AlarmsItem_Route(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            that.DepartureTime = (global::System.String)Value;
+            that.Route = (global::Blend.SampleData.SampleDataSource.Route)Value;
         }
-        private object get_2_AlarmsItem_BeginStation(object instance)
+        private object get_2_AlarmsItem_Time(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            return that.Time;
+        }
+        private void set_2_AlarmsItem_Time(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            that.Time = (global::Blend.SampleData.SampleDataSource.Time)Value;
+        }
+        private object get_3_Route_BeginStation(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             return that.BeginStation;
         }
-        private void set_2_AlarmsItem_BeginStation(object instance, object Value)
+        private void set_3_Route_BeginStation(object instance, object Value)
         {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             that.BeginStation = (global::System.String)Value;
         }
-        private object get_3_AlarmsItem_EndStation(object instance)
+        private object get_4_Route_EndStation(object instance)
         {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             return that.EndStation;
         }
-        private void set_3_AlarmsItem_EndStation(object instance, object Value)
+        private void set_4_Route_EndStation(object instance, object Value)
         {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             that.EndStation = (global::System.String)Value;
+        }
+        private object get_5_Time_Interval(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
+            return that.Interval;
+        }
+        private void set_5_Time_Interval(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
+            that.Interval = (global::Blend.SampleData.SampleDataSource.Interval)Value;
+        }
+        private object get_6_Time_Departure(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
+            return that.Departure;
+        }
+        private void set_6_Time_Departure(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
+            that.Departure = (global::Blend.SampleData.SampleDataSource.Departure)Value;
+        }
+        private object get_7_Interval_Days(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Interval)instance;
+            return that.Days;
+        }
+        private object get_8_DaysItem_Name(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.DaysItem)instance;
+            return that.Name;
+        }
+        private void set_8_DaysItem_Name(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.DaysItem)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_9_Departure_Earliest(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
+            return that.Earliest;
+        }
+        private void set_9_Departure_Earliest(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
+            that.Earliest = (global::System.String)Value;
+        }
+        private object get_10_Departure_Latest(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
+            return that.Latest;
+        }
+        private void set_10_Departure_Latest(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
+            that.Latest = (global::System.String)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -448,23 +619,65 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlMember.Getter = get_0_SampleDataSource_Alarms;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.DepartureTime":
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.Route":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "DepartureTime", "String");
-                xamlMember.Getter = get_1_AlarmsItem_DepartureTime;
-                xamlMember.Setter = set_1_AlarmsItem_DepartureTime;
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Route", "Blend.SampleData.SampleDataSource.Route");
+                xamlMember.Getter = get_1_AlarmsItem_Route;
+                xamlMember.Setter = set_1_AlarmsItem_Route;
                 break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.BeginStation":
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.Time":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Time", "Blend.SampleData.SampleDataSource.Time");
+                xamlMember.Getter = get_2_AlarmsItem_Time;
+                xamlMember.Setter = set_2_AlarmsItem_Time;
+                break;
+            case "Blend.SampleData.SampleDataSource.Route.BeginStation":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Route");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "BeginStation", "String");
-                xamlMember.Getter = get_2_AlarmsItem_BeginStation;
-                xamlMember.Setter = set_2_AlarmsItem_BeginStation;
+                xamlMember.Getter = get_3_Route_BeginStation;
+                xamlMember.Setter = set_3_Route_BeginStation;
                 break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.EndStation":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+            case "Blend.SampleData.SampleDataSource.Route.EndStation":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Route");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "EndStation", "String");
-                xamlMember.Getter = get_3_AlarmsItem_EndStation;
-                xamlMember.Setter = set_3_AlarmsItem_EndStation;
+                xamlMember.Getter = get_4_Route_EndStation;
+                xamlMember.Setter = set_4_Route_EndStation;
+                break;
+            case "Blend.SampleData.SampleDataSource.Time.Interval":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Time");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Interval", "Blend.SampleData.SampleDataSource.Interval");
+                xamlMember.Getter = get_5_Time_Interval;
+                xamlMember.Setter = set_5_Time_Interval;
+                break;
+            case "Blend.SampleData.SampleDataSource.Time.Departure":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Time");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Departure", "Blend.SampleData.SampleDataSource.Departure");
+                xamlMember.Getter = get_6_Time_Departure;
+                xamlMember.Setter = set_6_Time_Departure;
+                break;
+            case "Blend.SampleData.SampleDataSource.Interval.Days":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Interval");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Days", "Blend.SampleData.SampleDataSource.Days");
+                xamlMember.Getter = get_7_Interval_Days;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Blend.SampleData.SampleDataSource.DaysItem.Name":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.DaysItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_8_DaysItem_Name;
+                xamlMember.Setter = set_8_DaysItem_Name;
+                break;
+            case "Blend.SampleData.SampleDataSource.Departure.Earliest":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Departure");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Earliest", "String");
+                xamlMember.Getter = get_9_Departure_Earliest;
+                xamlMember.Setter = set_9_Departure_Earliest;
+                break;
+            case "Blend.SampleData.SampleDataSource.Departure.Latest":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Departure");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Latest", "String");
+                xamlMember.Getter = get_10_Departure_Latest;
+                xamlMember.Setter = set_10_Departure_Latest;
                 break;
             }
             return xamlMember;

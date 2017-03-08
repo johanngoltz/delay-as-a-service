@@ -5,7 +5,8 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Alarms" />
-    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Route" />
+    <RootPropertyPathName Name="EndStation" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -109,9 +110,6 @@
       <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
@@ -135,11 +133,32 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Prototype.MainPage" />
     <RootType FullName="Blend.SampleData.SampleDataSource.AlarmsItem">
-      <RootProperty Name="DepartureTime" />
+      <RootProperty Name="Route" />
+      <RootProperty Name="Time" />
+    </RootType>
+    <RootType FullName="Blend.SampleData.SampleDataSource.Route">
       <RootProperty Name="BeginStation" />
       <RootProperty Name="EndStation" />
+    </RootType>
+    <RootType FullName="Blend.SampleData.SampleDataSource.Time">
+      <RootProperty Name="Interval" />
+      <RootProperty Name="Departure" />
+    </RootType>
+    <RootType FullName="Blend.SampleData.SampleDataSource.Interval">
+      <RootProperty Name="Days" />
+    </RootType>
+    <RootType FullName="Blend.SampleData.SampleDataSource.DaysItem">
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Blend.SampleData.SampleDataSource.Departure">
+      <RootProperty Name="Earliest" />
+      <RootProperty Name="Latest" />
     </RootType>
   </Roots.RootTypes>
 </Roots>

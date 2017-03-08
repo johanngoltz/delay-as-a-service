@@ -17,8 +17,36 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AlarmsItem">
-    <xs:attribute name="DepartureTime" type="xs:string" />
+    <xs:sequence>
+      <xs:element name="Route" type="tns:Route" />
+      <xs:element name="Time" type="tns:Time" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Route">
     <xs:attribute name="BeginStation" type="xs:string" />
     <xs:attribute name="EndStation" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Time">
+    <xs:sequence>
+      <xs:element name="Interval" type="tns:Interval" />
+      <xs:element name="Departure" type="tns:Departure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Interval">
+    <xs:sequence>
+      <xs:element name="Days" type="tns:Days" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Days">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="DaysItem" type="tns:DaysItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DaysItem">
+    <xs:attribute name="Name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Departure">
+    <xs:attribute name="Earliest" type="xs:string" />
+    <xs:attribute name="Latest" type="xs:string" />
   </xs:complexType>
 </xs:schema>
