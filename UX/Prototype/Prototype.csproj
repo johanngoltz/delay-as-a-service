@@ -99,6 +99,9 @@
     <Compile Include="CreateAlarmPage.xaml.cs">
       <DependentUpon>CreateAlarmPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Detail_Station_Info.xaml.cs">
+      <DependentUpon>Detail_Station_Info.xaml</DependentUpon>
+    </Compile>
     <Compile Include="JourneyDetailPage.xaml.cs">
       <DependentUpon>JourneyDetailPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="CreateAlarmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detail_Station_Info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
