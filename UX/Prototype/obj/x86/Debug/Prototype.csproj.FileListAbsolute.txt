@@ -229,3 +229,8 @@ C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Pro
 C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\SampleData\SampleDataSource\SampleDataSource.xbf
 C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\SampleData\SampleDataSource\SampleDataSource.xaml
 C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\SampleData\SampleDataSource\SampleDataSource.xbf
+C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Detail_Station_Info.xbf
+C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\Detail_Station_Info.g.i.cs
+C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\Detail_Station_Info.g.cs
+C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\Detail_Station_Info.xaml
+C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\obj\x86\Debug\Detail_Station_Info.xbf

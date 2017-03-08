@@ -29,7 +29,8 @@
   <xs:complexType name="Time">
     <xs:sequence>
       <xs:element name="Interval" type="tns:Interval" />
-      <xs:element name="Departure" type="tns:Departure" />
+      <xs:element name="Departure" type="tns:TimeRange" />
+      <xs:element name="Arrival" type="tns:TimeRange" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Interval">
@@ -45,7 +46,7 @@
   <xs:complexType name="DaysItem">
     <xs:attribute name="Name" type="xs:string" />
   </xs:complexType>
-  <xs:complexType name="Departure">
+  <xs:complexType name="TimeRange">
     <xs:attribute name="Earliest" type="xs:string" />
     <xs:attribute name="Latest" type="xs:string" />
   </xs:complexType>

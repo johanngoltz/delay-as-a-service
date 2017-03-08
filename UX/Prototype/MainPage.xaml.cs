@@ -26,7 +26,7 @@ namespace Prototype
     {
         public MainPage()
         {
-            this.InitializeComponent();            
+            this.InitializeComponent();
         }
     }
 
