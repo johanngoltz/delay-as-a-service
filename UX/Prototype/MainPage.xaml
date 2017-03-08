@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:SampleData="using:Blend.SampleData.SampleDataSource"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="Prototype.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
@@ -151,6 +152,20 @@
             </Border>
         </ControlTemplate>
     </Page.Resources>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Add" Label="Hinzufügen" x:Name="addAppBarButton">
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addAppBarButton}">
+                        <Core:NavigateToPageAction TargetPage="CreateAlarmPage.xaml" />
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource SampleDataSource}}">
         <VisualStateManager.VisualStateGroups>
@@ -165,30 +180,90 @@
             </ScrollViewer.TopHeader>-->
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <Grid x:Name="contextDependent" Grid.Row="0">
-                <!--Platzhalter-->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-            </Grid>
+            <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="1">
+                <FlipView.Items>
+                    <RelativePanel Padding="10">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                        <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
+                    </RelativePanel>
+                    <RelativePanel Padding="10">
+                        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
+                        <TextBlock x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
+                        <Line Margin="0,29,-300,-176"></Line>
+                        <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
+                    </RelativePanel>
+                </FlipView.Items>
+            </FlipView>
             <Pivot VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1">
                 <PivotItem>
                     <PivotItem.Header>Alarme</PivotItem.Header>
                     <ListView ItemsSource="{Binding Alarms}">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Route.BeginStation}"/>
-                                    <SymbolIcon Symbol="Forward" Margin="10,0"/>
-                                    <TextBlock Text="{Binding Route.EndStation}"/>
+                                <StackPanel Orientation="Vertical">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Route.BeginStation}"/>
+                                            <TextBlock Text="→" Margin="10,0"/>
+                                            <TextBlock Text="{Binding Route.EndStation}"/>
+                                        </StackPanel>
+                                        <ToggleSwitch Grid.Column="1" HorizontalAlignment="Right" OffContent="" OnContent="" MinWidth="0" VerticalAlignment="Top" VerticalContentAlignment="Top" Margin="0,-7,0,0"/>
+                                    </Grid>
+                                    <StackPanel Orientation="Horizontal" x:Name="_this">
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="myStates">
+                                                <VisualState x:Name="ExactTime">
+                                                    <VisualState.Setters>
+                                                        <Setter Target="und.Visibility" Value="Collapsed"/>
+                                                        <Setter Target="lastDeparture.Visibility" Value="Collapsed"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                                <VisualState x:Name="TimeRange">
+                                                    <VisualState.Setters>
+                                                        <Setter Target="und.Visibility" Value="Visible"/>
+                                                        <Setter Target="lastDeparture.Visibility" Value="Visible"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                        <Interactivity:Interaction.Behaviors>
+                                            <Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="Equal" Value="6:54">
+                                                <Core:GoToStateAction StateName="ExactTime" TargetObject="{Binding ElementName=_this}"/>
+                                            </Core:DataTriggerBehavior>
+                                            <!--<Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="NotEqual" Value="{Binding Time.Departure.Latest}">
+                                                <Core:GoToStateAction StateName="TimeRange" TargetObject="{Binding RelativeSource={RelativeSource Self}}"/>
+                                            </Core:DataTriggerBehavior>-->
+                                        </Interactivity:Interaction.Behaviors>
+                                        <ItemsControl ItemsSource="{Binding Time.Interval.Days}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <StackPanel Orientation="Horizontal"/>
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal" Padding="0,0,3,0">
+                                                        <TextBlock Text="{Binding Name}"/>
+                                                        <TextBlock Text=","/>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                        <TextBlock Text="zw." Padding="0,0,3,0"/>
+                                        <TextBlock Text="{Binding Time.Departure.Earliest}"/>
+                                        <TextBlock x:Name="und" Text="und" Margin="3,0,3,0"/>
+                                        <TextBlock x:Name="lastDeparture" Text="{Binding Time.Departure.Latest}"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
