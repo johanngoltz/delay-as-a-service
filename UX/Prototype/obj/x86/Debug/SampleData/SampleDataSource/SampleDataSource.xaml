@@ -5,16 +5,285 @@
 -->
 <SampleData:SampleDataSource xmlns:SampleData="using:Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <SampleData:SampleDataSource.Alarms>
-    <SampleData:AlarmsItem DepartureTime="4567 Main St., Buffalo, NY 98052" BeginStation="Walldorf" EndStation="Karlsruhe" />
-    <SampleData:AlarmsItem DepartureTime="1234 Main St., Buffalo, NY 98052" BeginStation="Karlsruhe" EndStation="Walldorf" />
-    <SampleData:AlarmsItem DepartureTime="2345 Main St., Buffalo, NY 98052" EndStation="Praesent curae" />
-    <SampleData:AlarmsItem DepartureTime="789 Main St., Buffalo, NY 98052" EndStation="Duis nam sed integer" />
-    <SampleData:AlarmsItem DepartureTime="1234 Front St., Seattle, WA 12345" EndStation="Nunc quisque amet" />
-    <SampleData:AlarmsItem DepartureTime="2345 Front St., Seattle, WA 12345" EndStation="Vivamus aliquam mauris" />
-    <SampleData:AlarmsItem DepartureTime="789 Front St., Seattle, WA 12345" EndStation="Aliquet donec dis" />
-    <SampleData:AlarmsItem DepartureTime="4567 Main St., Seattle, WA 12345" EndStation="Accumsan nullam" />
-    <SampleData:AlarmsItem DepartureTime="1234 1st Ave, San Francisco, CA 99999" EndStation="Aptent blandit etiam" />
-    <SampleData:AlarmsItem DepartureTime="2345 1st Ave, San Francisco, CA 99999" EndStation="Ante fusce lorem commodo" />
-    <SampleData:AlarmsItem DepartureTime="789 1st Ave, San Francisco, CA 99999" EndStation="Est hac leo" />
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Karlsruhe" EndStation="Walldorf" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Mo" />
+                <SampleData:DaysItem Name="Di" />
+                <SampleData:DaysItem Name="Mi" />
+                <SampleData:DaysItem Name="Sed ante" />
+                <SampleData:DaysItem Name="Dictumst eleifend" />
+                <SampleData:DaysItem Name="Donec integer dis etiam" />
+                <SampleData:DaysItem Name="Fusce aptent" />
+                <SampleData:DaysItem Name="Arcu quisque" />
+                <SampleData:DaysItem Name="Diam facilisi eget elit" />
+                <SampleData:DaysItem Name="Est vivamus auctor" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Hac lorem" Latest="Faucibus aliquam morbi" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Aliquet leo" EndStation="Habitant congue" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Cursus blandit" />
+                <SampleData:DaysItem Name="Inceptos interdum mus" />
+                <SampleData:DaysItem Name="Lobortis nascetur nulla" />
+                <SampleData:DaysItem Name="Nec proin dictum enim" />
+                <SampleData:DaysItem Name="Commodo augue" />
+                <SampleData:DaysItem Name="Lectus dolor pharetra conubia" />
+                <SampleData:DaysItem Name="Fames placerat non" />
+                <SampleData:DaysItem Name="Per erat" />
+                <SampleData:DaysItem Name="Libero pulvinar" />
+                <SampleData:DaysItem Name="Felis cubilia eros" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Ipsum ligula sed" Latest="Justo dapibus" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Lacus egestas litora luctus" EndStation="Nibh magnis lorem" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Sagittis senectus" />
+                <SampleData:DaysItem Name="Nisi mattis nisl magna" />
+                <SampleData:DaysItem Name="Massa sociosqu" />
+                <SampleData:DaysItem Name="Metus morbi neque" />
+                <SampleData:DaysItem Name="Suscipit euismod torquent" />
+                <SampleData:DaysItem Name="Mauris mollis" />
+                <SampleData:DaysItem Name="Montes nunc sem feugiat" />
+                <SampleData:DaysItem Name="Odio gravida ultrices netus" />
+                <SampleData:DaysItem Name="Orci pede nulla" />
+                <SampleData:DaysItem Name="Quam nostra vehicula iaculis" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Lacinia quis sit" Latest="Vel nam" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Laoreet ornare porta" EndStation="Purus sed natoque posuere" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Volutpat urna cras platea" />
+                <SampleData:DaysItem Name="Potenti pretium dis" />
+                <SampleData:DaysItem Name="Est risus" />
+                <SampleData:DaysItem Name="Hac rhoncus leo duis" />
+                <SampleData:DaysItem Name="Maecenas sodales velit" />
+                <SampleData:DaysItem Name="Praesent accumsan mus" />
+                <SampleData:DaysItem Name="Vitae class viverra" />
+                <SampleData:DaysItem Name="Primis aliquam integer" />
+                <SampleData:DaysItem Name="Bibendum rutrum quisque dictumst" />
+                <SampleData:DaysItem Name="Vivamus sapien" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Semper curae eleifend" Latest="Facilisi nunc" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Nec sociis taciti tellus" EndStation="Donec faucibus etiam tempor" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Fusce habitant aliquam non" />
+                <SampleData:DaysItem Name="Per amet tempus tortor" />
+                <SampleData:DaysItem Name="Sed lorem ante arcu" />
+                <SampleData:DaysItem Name="Turpis morbi" />
+                <SampleData:DaysItem Name="Inceptos aliquet diam eget" />
+                <SampleData:DaysItem Name="Elit varius aenean" />
+                <SampleData:DaysItem Name="Enim blandit" />
+                <SampleData:DaysItem Name="Nulla sem proin augue" />
+                <SampleData:DaysItem Name="Erat eros mauris" />
+                <SampleData:DaysItem Name="Interdum nullam dolor" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Sit nibh commodo nisi" Latest="Fames conubia" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Aptent nisl" EndStation="Vel auctor nam" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Congue cursus" />
+                <SampleData:DaysItem Name="Cubilia dictum lectus dapibus" />
+                <SampleData:DaysItem Name="Nunc sed" />
+                <SampleData:DaysItem Name="Egestas euismod dis odio" />
+                <SampleData:DaysItem Name="Orci felis" />
+                <SampleData:DaysItem Name="Est libero lobortis pede" />
+                <SampleData:DaysItem Name="Quam ligula" />
+                <SampleData:DaysItem Name="Litora feugiat nascetur" />
+                <SampleData:DaysItem Name="Luctus quis hac" />
+                <SampleData:DaysItem Name="Magnis pharetra mattis mauris" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Urna mollis montes nostra" Latest="Gravida ipsum iaculis" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Lacinia laoreet" EndStation="Justo cras natoque" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Placerat ornare" />
+                <SampleData:DaysItem Name="Leo pulvinar platea sagittis" />
+                <SampleData:DaysItem Name="Duis mus" />
+                <SampleData:DaysItem Name="Posuere nec" />
+                <SampleData:DaysItem Name="Potenti senectus" />
+                <SampleData:DaysItem Name="Primis sociosqu" />
+                <SampleData:DaysItem Name="Pretium nunc" />
+                <SampleData:DaysItem Name="Amet lacus ante" />
+                <SampleData:DaysItem Name="Arcu rutrum" />
+                <SampleData:DaysItem Name="Non sapien lorem" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Semper sociis taciti" Latest="Rhoncus suscipit" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Per tellus sodales diam" EndStation="Viverra aliquam magna massa" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Metus tempor tempus integer" />
+                <SampleData:DaysItem Name="Morbi torquent eget" />
+                <SampleData:DaysItem Name="Quisque vivamus sed aliquam" />
+                <SampleData:DaysItem Name="Tortor neque" />
+                <SampleData:DaysItem Name="Turpis elit" />
+                <SampleData:DaysItem Name="Enim ultrices" />
+                <SampleData:DaysItem Name="Sem aliquet vehicula" />
+                <SampleData:DaysItem Name="Varius erat sit eros" />
+                <SampleData:DaysItem Name="Netus nibh aenean mauris" />
+                <SampleData:DaysItem Name="Vel blandit commodo" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Nam nulla" Latest="Conubia volutpat" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Maecenas cubilia nullam" EndStation="Nisi nisl" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Porta dapibus" />
+                <SampleData:DaysItem Name="Praesent purus accumsan sed" />
+                <SampleData:DaysItem Name="Aptent auctor risus" />
+                <SampleData:DaysItem Name="Congue velit cursus" />
+                <SampleData:DaysItem Name="Dis vitae" />
+                <SampleData:DaysItem Name="Bibendum est class" />
+                <SampleData:DaysItem Name="Nunc odio orci pede" />
+                <SampleData:DaysItem Name="Dictum lectus hac quam" />
+                <SampleData:DaysItem Name="Libero quis" />
+                <SampleData:DaysItem Name="Egestas ligula urna" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Curae cras dictumst litora" Latest="Luctus euismod" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Route>
+        <SampleData:Route BeginStation="Duis magnis" EndStation="Donec nunc feugiat" />
+      </SampleData:AlarmsItem.Route>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Name="Eleifend amet mattis" />
+                <SampleData:DaysItem Name="Etiam leo mus facilisi" />
+                <SampleData:DaysItem Name="Gravida iaculis fusce" />
+                <SampleData:DaysItem Name="Lorem morbi faucibus habitant" />
+                <SampleData:DaysItem Name="Lacinia ante" />
+                <SampleData:DaysItem Name="Inceptos nec" />
+                <SampleData:DaysItem Name="Arcu interdum laoreet lobortis" />
+                <SampleData:DaysItem Name="Non per sed mauris" />
+                <SampleData:DaysItem Name="Nulla natoque diam posuere" />
+                <SampleData:DaysItem Name="Nascetur potenti pharetra" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:Departure Earliest="Mollis eget" Latest="Proin sem" />
+          </SampleData:Time.Departure>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+    </SampleData:AlarmsItem>
   </SampleData:SampleDataSource.Alarms>
 </SampleData:SampleDataSource>

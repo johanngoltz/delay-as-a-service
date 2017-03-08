@@ -24,29 +24,9 @@ namespace Prototype
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public static MainPage instance;
         public MainPage()
         {
-            instance = this;
-            this.InitializeComponent();
-            scrollViewer.ManipulationDelta += ScrollViewer_ManipulationDelta;
-            ((scrollViewer.Content as Pivot).Items[0] as PivotItem).ManipulationDelta += MainPage_ManipulationDelta;
-            
-        }
-
-        private void MainPage_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ScrollViewer_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override void OnPointerEntered(PointerRoutedEventArgs e)
-        {
-            base.OnPointerEntered(e);
+            this.InitializeComponent();            
         }
     }
 

@@ -163,8 +163,12 @@
         <!--<ScrollViewer.TopHeader>
                   Height="{Binding Path=ScrollableHeight, Mode=OneWay, Converter={StaticResource ScrollModeConverter}, RelativeSource={RelativeSource Mode=Self}}"
             </ScrollViewer.TopHeader>-->
-        <StackPanel>
-            <Grid x:Name="contextDependent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid x:Name="contextDependent" Grid.Row="0">
                 <!--Platzhalter-->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -174,19 +178,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Rectangle Height="10" Fill="AliceBlue"></Rectangle>
-                <Rectangle Grid.Row="1" Height="10" Fill="Blue"></Rectangle>
             </Grid>
-            <Pivot VerticalAlignment="Top" HorizontalAlignment="Left" >
+            <Pivot VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1">
                 <PivotItem>
                     <PivotItem.Header>Alarme</PivotItem.Header>
                     <ListView ItemsSource="{Binding Alarms}">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding BeginStation}"/>
+                                    <TextBlock Text="{Binding Route.BeginStation}"/>
                                     <SymbolIcon Symbol="Forward" Margin="10,0"/>
-                                    <TextBlock Text="{Binding EndStation}"/>
+                                    <TextBlock Text="{Binding Route.EndStation}"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -197,6 +199,6 @@
                 </PivotItem>
                 <PivotItem Header="Feedback"/>
             </Pivot>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Page>
