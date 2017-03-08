@@ -1,0 +1,20 @@
+﻿<!--
+      *********    DIESE DATEI DARF NICHT GEÄNDERT WERDEN     *********
+      Diese Datei wurde von einem Designwerkzeug erstellt. Änderungen
+      dieser Datei können Fehler verursachen.
+-->
+<SampleData:SampleDataSource xmlns:SampleData="using:Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:SampleDataSource.Alarms>
+    <SampleData:AlarmsItem DepartureTime="4567 Main St., Buffalo, NY 98052" BeginStation="Walldorf" EndStation="Karlsruhe" />
+    <SampleData:AlarmsItem DepartureTime="1234 Main St., Buffalo, NY 98052" BeginStation="Karlsruhe" EndStation="Walldorf" />
+    <SampleData:AlarmsItem DepartureTime="2345 Main St., Buffalo, NY 98052" EndStation="Praesent curae" />
+    <SampleData:AlarmsItem DepartureTime="789 Main St., Buffalo, NY 98052" EndStation="Duis nam sed integer" />
+    <SampleData:AlarmsItem DepartureTime="1234 Front St., Seattle, WA 12345" EndStation="Nunc quisque amet" />
+    <SampleData:AlarmsItem DepartureTime="2345 Front St., Seattle, WA 12345" EndStation="Vivamus aliquam mauris" />
+    <SampleData:AlarmsItem DepartureTime="789 Front St., Seattle, WA 12345" EndStation="Aliquet donec dis" />
+    <SampleData:AlarmsItem DepartureTime="4567 Main St., Seattle, WA 12345" EndStation="Accumsan nullam" />
+    <SampleData:AlarmsItem DepartureTime="1234 1st Ave, San Francisco, CA 99999" EndStation="Aptent blandit etiam" />
+    <SampleData:AlarmsItem DepartureTime="2345 1st Ave, San Francisco, CA 99999" EndStation="Ante fusce lorem commodo" />
+    <SampleData:AlarmsItem DepartureTime="789 1st Ave, San Francisco, CA 99999" EndStation="Est hac leo" />
+  </SampleData:SampleDataSource.Alarms>
+</SampleData:SampleDataSource>
