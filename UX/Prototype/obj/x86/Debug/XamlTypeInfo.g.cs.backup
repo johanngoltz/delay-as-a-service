@@ -316,7 +316,9 @@ namespace Prototype.Prototype_XamlTypeInfo
             case 9:   //  Blend.SampleData.SampleDataSource.AlarmsItem
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_9_AlarmsItem;
-                userType.AddMemberName("Text");
+                userType.AddMemberName("DepartureTime");
+                userType.AddMemberName("BeginStation");
+                userType.AddMemberName("EndStation");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -402,15 +404,35 @@ namespace Prototype.Prototype_XamlTypeInfo
             var that = (global::Blend.SampleData.SampleDataSource.SampleDataSource)instance;
             return that.Alarms;
         }
-        private object get_1_AlarmsItem_Text(object instance)
+        private object get_1_AlarmsItem_DepartureTime(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            return that.Text;
+            return that.DepartureTime;
         }
-        private void set_1_AlarmsItem_Text(object instance, object Value)
+        private void set_1_AlarmsItem_DepartureTime(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            that.Text = (global::System.String)Value;
+            that.DepartureTime = (global::System.String)Value;
+        }
+        private object get_2_AlarmsItem_BeginStation(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            return that.BeginStation;
+        }
+        private void set_2_AlarmsItem_BeginStation(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            that.BeginStation = (global::System.String)Value;
+        }
+        private object get_3_AlarmsItem_EndStation(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            return that.EndStation;
+        }
+        private void set_3_AlarmsItem_EndStation(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            that.EndStation = (global::System.String)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -426,11 +448,23 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlMember.Getter = get_0_SampleDataSource_Alarms;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.Text":
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.DepartureTime":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Text", "String");
-                xamlMember.Getter = get_1_AlarmsItem_Text;
-                xamlMember.Setter = set_1_AlarmsItem_Text;
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "DepartureTime", "String");
+                xamlMember.Getter = get_1_AlarmsItem_DepartureTime;
+                xamlMember.Setter = set_1_AlarmsItem_DepartureTime;
+                break;
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.BeginStation":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "BeginStation", "String");
+                xamlMember.Getter = get_2_AlarmsItem_BeginStation;
+                xamlMember.Setter = set_2_AlarmsItem_BeginStation;
+                break;
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.EndStation":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "EndStation", "String");
+                xamlMember.Getter = get_3_AlarmsItem_EndStation;
+                xamlMember.Setter = set_3_AlarmsItem_EndStation;
                 break;
             }
             return xamlMember;
