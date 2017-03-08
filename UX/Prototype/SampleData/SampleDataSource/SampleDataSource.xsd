@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+      *********    DIESE DATEI DARF NICHT GEÄNDERT WERDEN     *********
+      Diese Datei wurde von einem Designwerkzeug erstellt. Änderungen
+      dieser Datei können Fehler verursachen.
+-->
+<xs:schema xmlns:blend="http://schemas.microsoft.com/expression/blend/2008" xmlns:tns="Blend.SampleData.SampleDataSource" targetNamespace="Blend.SampleData.SampleDataSource" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SampleDataSource" type="tns:SampleDataSource" />
+  <xs:complexType name="SampleDataSource">
+    <xs:sequence>
+      <xs:element name="Alarms" type="tns:Alarms" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Alarms">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="AlarmsItem" type="tns:AlarmsItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AlarmsItem">
+    <xs:attribute name="DepartureTime" type="xs:string" />
+    <xs:attribute name="BeginStation" type="xs:string" />
+    <xs:attribute name="EndStation" type="xs:string" />
+  </xs:complexType>
+</xs:schema>

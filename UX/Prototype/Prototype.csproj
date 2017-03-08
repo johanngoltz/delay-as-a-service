@@ -90,6 +90,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
+    <None Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -105,6 +106,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
+      <DependentUpon>SampleDataSource.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -121,6 +125,11 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -139,6 +148,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SampleData\SampleDataSource\SampleDataSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
