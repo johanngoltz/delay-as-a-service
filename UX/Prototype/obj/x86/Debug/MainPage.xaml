@@ -17,7 +17,7 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton Icon="Add" Label="Hinzufügen" x:Name="addAppBarButton">
+            <AppBarButton x:ConnectionId='1' Icon="Add" Label="Hinzufügen" x:Name="addAppBarButton">
                 <Interactivity:Interaction.Behaviors>
                     <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addAppBarButton}">
                         <Core:EventTriggerBehavior.Actions>
@@ -31,9 +31,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource SampleDataSource}}">
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="InTrain"/>
-                <VisualState x:Name="InDelayedTrain"/>
+            <VisualStateGroup x:ConnectionId='2' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="InTrain"/>
+                <VisualState x:ConnectionId='4' x:Name="InDelayedTrain"/>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
@@ -45,27 +45,27 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
+            <FlipView x:ConnectionId='5' x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
                 <FlipView.Items>
                     <RelativePanel Padding="10" Background="#FF46FF00">
-                        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:ConnectionId='15' x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='16' x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
                         <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Red">
-                        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                        <TextBlock x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
-                        <TextBlock x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
+                        <TextBlock x:ConnectionId='11' x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='12' x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:ConnectionId='13' x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
+                        <TextBlock x:ConnectionId='14' x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
                         <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
                         <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Red">
-                        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                        <TextBlock x:Name="routeTextBlock3" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
-                        <TextBlock x:Name="timeTextBlock3" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock3"/>
-                        <TextBlock x:Name="AAA" Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Margin="10,0"/>
+                        <TextBlock x:ConnectionId='6' x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='7' x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:ConnectionId='8' x:Name="routeTextBlock3" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
+                        <TextBlock x:ConnectionId='9' x:Name="timeTextBlock3" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock3"/>
+                        <TextBlock x:ConnectionId='10' x:Name="AAA" Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Margin="10,0"/>
                         <Rectangle HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="47" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Fill="White" Stroke="White" Margin="-42.333,-1.333,0,0" RenderTransformOrigin="0.5,0.5">
                             <Rectangle.RenderTransform>
                                 <CompositeTransform ScaleY="-1"/>
@@ -199,3 +199,4 @@
         </Grid>
     </Grid>
 </Page>
+
