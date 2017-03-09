@@ -11,146 +11,6 @@
     <Page.Resources>
         <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
         <local:ScrollModeConverter x:Key="ScrollModeConverter"/>
-        <ControlTemplate x:Key="DecoratedScrollViewer" TargetType="ScrollViewer">
-            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="ScrollingIndicatorStates">
-                        <VisualStateGroup.Transitions>
-                            <VisualTransition From="MouseIndicator" To="NoIndicator">
-                                <Storyboard>
-                                    <FadeOutThemeAnimation TargetName="ScrollBarSeparator" BeginTime="0:0:3" />
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VerticalScrollBar"
-                                        Storyboard.TargetProperty="IndicatorMode">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:3">
-                                            <DiscreteObjectKeyFrame.Value>
-                                                <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
-                                            </DiscreteObjectKeyFrame.Value>
-                                        </DiscreteObjectKeyFrame>
-                                    </ObjectAnimationUsingKeyFrames>
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalScrollBar"
-                                        Storyboard.TargetProperty="IndicatorMode">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:3">
-                                            <DiscreteObjectKeyFrame.Value>
-                                                <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
-                                            </DiscreteObjectKeyFrame.Value>
-                                        </DiscreteObjectKeyFrame>
-                                    </ObjectAnimationUsingKeyFrames>
-                                </Storyboard>
-                            </VisualTransition>
-                            <VisualTransition From="TouchIndicator" To="NoIndicator">
-                                <Storyboard>
-                                    <FadeOutThemeAnimation TargetName="ScrollBarSeparator" />
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VerticalScrollBar"
-                                        Storyboard.TargetProperty="IndicatorMode">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.5">
-                                            <DiscreteObjectKeyFrame.Value>
-                                                <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
-                                            </DiscreteObjectKeyFrame.Value>
-                                        </DiscreteObjectKeyFrame>
-                                    </ObjectAnimationUsingKeyFrames>
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalScrollBar"
-                                        Storyboard.TargetProperty="IndicatorMode">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.5">
-                                            <DiscreteObjectKeyFrame.Value>
-                                                <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
-                                            </DiscreteObjectKeyFrame.Value>
-                                        </DiscreteObjectKeyFrame>
-                                    </ObjectAnimationUsingKeyFrames>
-                                </Storyboard>
-                            </VisualTransition>
-                        </VisualStateGroup.Transitions>
-
-                        <VisualState x:Name="NoIndicator">
-                            <Storyboard>
-                                <FadeOutThemeAnimation TargetName="ScrollBarSeparator" />
-                            </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="TouchIndicator">
-                            <Storyboard>
-                                <FadeOutThemeAnimation TargetName="ScrollBarSeparator" />
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VerticalScrollBar"
-                                    Storyboard.TargetProperty="IndicatorMode"
-                                    Duration="0">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <ScrollingIndicatorMode>TouchIndicator</ScrollingIndicatorMode>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalScrollBar"
-                                    Storyboard.TargetProperty="IndicatorMode"
-                                    Duration="0">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <ScrollingIndicatorMode>TouchIndicator</ScrollingIndicatorMode>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="MouseIndicator">
-                            <Storyboard>
-                                <FadeInThemeAnimation TargetName="ScrollBarSeparator" />
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VerticalScrollBar"
-                                    Storyboard.TargetProperty="IndicatorMode"
-                                    Duration="0">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <ScrollingIndicatorMode>MouseIndicator</ScrollingIndicatorMode>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalScrollBar"
-                                    Storyboard.TargetProperty="IndicatorMode"
-                                    Duration="0">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <ScrollingIndicatorMode>MouseIndicator</ScrollingIndicatorMode>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-                <Grid Background="{TemplateBinding Background}">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <ScrollContentPresenter x:Name="ScrollContentPresenter"
-                        Grid.RowSpan="2"
-                        Grid.ColumnSpan="2"
-                        ContentTemplate="{TemplateBinding ContentTemplate}"
-                        Margin="{TemplateBinding Padding}" />
-                    <ScrollBar x:Name="VerticalScrollBar"
-                        Grid.Column="1"
-                        IsTabStop="False"
-                        Maximum="{TemplateBinding ScrollableHeight}"
-                        Orientation="Vertical"
-                        Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
-                        Value="{TemplateBinding VerticalOffset}"
-                        ViewportSize="{TemplateBinding ViewportHeight}"
-                        HorizontalAlignment="Right" />
-                    <ScrollBar x:Name="HorizontalScrollBar"
-                        IsTabStop="False"
-                        Maximum="{TemplateBinding ScrollableWidth}"
-                        Orientation="Horizontal"
-                        Grid.Row="1"
-                        Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
-                        Value="{TemplateBinding HorizontalOffset}"
-                        ViewportSize="{TemplateBinding ViewportWidth}" />
-                    <Border x:Name="ScrollBarSeparator"
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" />
-                </Grid>
-            </Border>
-        </ControlTemplate>
     </Page.Resources>
     <Page.BottomAppBar>
         <CommandBar>
@@ -185,27 +45,43 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <FlipView x:ConnectionId='5' x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="1">
+            <FlipView x:ConnectionId='5' x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
                 <FlipView.Items>
-                    <RelativePanel Padding="10">
-                        <TextBlock x:ConnectionId='10' x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:ConnectionId='11' x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                    <RelativePanel Padding="10" Background="#FF46FF00">
+                        <TextBlock x:ConnectionId='15' x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='16' x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
                         <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
                     </RelativePanel>
-                    <RelativePanel Padding="10">
-                        <TextBlock x:ConnectionId='6' x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:ConnectionId='7' x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Alles OK!" FontSize="28" Margin="0,10"/>
-                        <TextBlock x:ConnectionId='8' x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
-                        <TextBlock x:ConnectionId='9' x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
-                        <Line Margin="0,29,-300,-176"></Line>
+                    <RelativePanel Padding="10" Background="Red">
+                        <TextBlock x:ConnectionId='11' x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='12' x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:ConnectionId='13' x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
+                        <TextBlock x:ConnectionId='14' x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
                         <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
+                        <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
+                    </RelativePanel>
+                    <RelativePanel Padding="10" Background="Red">
+                        <TextBlock x:ConnectionId='6' x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:ConnectionId='7' x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:ConnectionId='8' x:Name="routeTextBlock3" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
+                        <TextBlock x:ConnectionId='9' x:Name="timeTextBlock3" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock3"/>
+                        <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Margin="10,0"/>
+                        <Rectangle x:ConnectionId='10' x:Name="AAA" HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Fill="White" Stroke="White" Margin="10,0"/>
+                        <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock3"></Image>
                     </RelativePanel>
                 </FlipView.Items>
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=flipView}">
+                        <Core:EventTriggerBehavior.Actions>
+                            <Core:NavigateToPageAction TargetPage="Prototype.JourneyDetailPage" />
+                        </Core:EventTriggerBehavior.Actions>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
             </FlipView>
             <Pivot VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1">
                 <PivotItem>
                     <PivotItem.Header>Alarme</PivotItem.Header>
-                    <ListView ItemsSource="{Binding Alarms}">
+                    <ListView ItemsSource="{Binding Alarms}" HorizontalContentAlignment="Stretch">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Vertical">
@@ -240,7 +116,9 @@
                                         </VisualStateManager.VisualStateGroups>
                                         <Interactivity:Interaction.Behaviors>
                                             <Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="Equal" Value="6:54">
-                                                <Core:GoToStateAction StateName="ExactTime" TargetObject="{Binding ElementName=_this}"/>
+                                                <Core:DataTriggerBehavior.Actions>
+                                                    <Core:GoToStateAction StateName="ExactTime" TargetObject="{Binding ElementName=_this}"/>
+                                                </Core:DataTriggerBehavior.Actions>
                                             </Core:DataTriggerBehavior>
                                             <!--<Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="NotEqual" Value="{Binding Time.Departure.Latest}">
                                                 <Core:GoToStateAction StateName="TimeRange" TargetObject="{Binding RelativeSource={RelativeSource Self}}"/>
@@ -273,8 +151,51 @@
                 </PivotItem>
                 <PivotItem>
                     <PivotItem.Header>Tickets</PivotItem.Header>
+                    <ListView DataContext="{Binding Tickets}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <!-- von nach -->
+                                        <TextBlock Text="Karlsruhe"/>
+                                        <TextBlock Text="→"/>
+                                        <TextBlock Text="Walldorf"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <!-- Uhrzeit -->
+                                        <TextBlock Text="Gestern 7:02 - 7:34"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemsSource>
+                            <x:String>AAA</x:String>
+                        </ListView.ItemsSource>
+                    </ListView>
                 </PivotItem>
-                <PivotItem Header="Feedback"/>
+                <PivotItem Header="Feedback">
+                    <ListView DataContext="{Binding Tickets}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <!-- von nach -->
+                                        <TextBlock Text="Walldorf"/>
+                                        <TextBlock Text="→"/>
+                                        <TextBlock Text="Karsruhe"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <!-- Uhrzeit -->
+                                        <TextBlock Text="Vorgestern 16:58 - 17:34"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemsSource>
+                            <x:String>AAA</x:String>
+                        </ListView.ItemsSource>
+                    </ListView>
+                </PivotItem>
             </Pivot>
         </Grid>
     </Grid>
