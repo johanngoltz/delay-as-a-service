@@ -367,8 +367,8 @@
     <AppxPackagedFile Include="C:\Users\D064986\.nuget\packages\Win2D.uwp\1.19.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Assets\QR-Code_Willkommen_bei_Wikipedia.png">
+      <PackagePath>Assets\QR-Code_Willkommen_bei_Wikipedia.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -411,6 +411,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\SampleData\SampleDataSource\SampleDataSource_Files\image05.png">
       <PackagePath>SampleData\SampleDataSource\SampleDataSource_Files\image05.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Prototype.xr.xml">
       <PackagePath>Prototype.xr.xml</PackagePath>

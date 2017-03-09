@@ -18,21 +18,21 @@
 
         <ScrollViewer Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="588" Margin="0,52,0,0" VerticalAlignment="Top" Width="360">
             <Grid>
-                <TextBlock HorizontalAlignment="Left" Margin="10,330,0,0" TextWrapping="Wrap" Text="Beginn" VerticalAlignment="Top" Width="98" FontSize="18"/>
+                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,330,0,0" TextWrapping="Wrap" Text="Beginn" VerticalAlignment="Top" Width="98" FontSize="18"/>
                 <TimePicker HorizontalAlignment="Left" Margin="108,329,0,0" VerticalAlignment="Top"/>
                 <TimePicker HorizontalAlignment="Left" Margin="108,366,0,0" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" FontSize="18" Text="Ende"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,391,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nach" Width="98"/>
+                <TextBlock Grid.Row="3" HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>
+                <TextBlock Grid.Row="4" HorizontalAlignment="Left" Margin="10,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nach" Width="98"/>
                 <TextBox HorizontalAlignment="Left" Height="20" Margin="113,124,0,0" TextWrapping="Wrap" Text="Starthaltestelle" VerticalAlignment="Top" Width="237"/>
                 <TextBox HorizontalAlignment="Left" Height="20" Margin="113,161,0,0" TextWrapping="Wrap" Text="Endhaltestelle" VerticalAlignment="Top" Width="237"/>
                 <TextBox HorizontalAlignment="Left" Height="20" Margin="113,198,0,0" TextWrapping="Wrap" Text="Zwischenhalt" VerticalAlignment="Top" Width="237"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Via" Width="98"/>
+                <TextBlock Grid.Row="5" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Via" Width="98"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,218,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,287,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Zeitraum" VerticalAlignment="Top" Width="340" FontSize="20"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Alarm anlegen" VerticalAlignment="Top" Width="340"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,84,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Strecke" VerticalAlignment="Top" Width="340" FontSize="20"/>
+                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Alarm anlegen" VerticalAlignment="Top" Width="340"/>
+                <TextBlock Grid.Row="2" HorizontalAlignment="Left" Margin="10,84,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Strecke" VerticalAlignment="Top" Width="340" FontSize="20"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,452,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Wiederholung" VerticalAlignment="Top" Width="340" FontSize="20"/>
                 <RadioButton Content="Einmalig" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="46"/>
                 <CalendarDatePicker HorizontalAlignment="Left" Margin="113,490,0,0" VerticalAlignment="Top" Width="237"/>

@@ -22,22 +22,22 @@
                 <TextBox HorizontalAlignment="Left" Height="20" Margin="113,183,0,0" TextWrapping="Wrap" Text="Zwischenhalt" VerticalAlignment="Top" Width="237"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Via" Width="98"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,203,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Alarm anlegen" VerticalAlignment="Top" Width="340"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Verbindung wählen" VerticalAlignment="Top" Width="340"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,69,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Strecke" VerticalAlignment="Top" Width="340" FontSize="20"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,452,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Wiederholung" VerticalAlignment="Top" Width="340" FontSize="20"/>
-                <RadioButton Content="Einmalig" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="46"/>
-                <CalendarDatePicker HorizontalAlignment="Left" Margin="113,490,0,0" VerticalAlignment="Top" Width="237"/>
-                <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,521,0,0" VerticalAlignment="Top" Width="46"/>
-                <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,552,0,0" VerticalAlignment="Top" Width="46"/>
-                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46"/>
-                <Button Content="Mo" HorizontalAlignment="Left" Margin="39,614,0,-6" VerticalAlignment="Top"/>
-                <Button Content="Di" HorizontalAlignment="Left" Margin="86,614,0,-6" VerticalAlignment="Top" Background="Black" Foreground="White"/>
-                <Button Content="Mi" HorizontalAlignment="Left" Margin="125,614,0,-6" VerticalAlignment="Top"/>
-                <Button Content="Do" HorizontalAlignment="Left" Margin="167,614,0,-6" VerticalAlignment="Top" Background="Black" Foreground="White"/>
-                <Button Content="Fr" HorizontalAlignment="Left" Margin="211,614,0,-6" VerticalAlignment="Top" Foreground="White" Background="Black"/>
-                <Button Content="Sa" HorizontalAlignment="Left" Margin="249,614,0,-6" VerticalAlignment="Top"/>
-                <Button Content="So" HorizontalAlignment="Left" Margin="290,614,0,-6" VerticalAlignment="Top"/>
-                <Button HorizontalAlignment="Left" Margin="250,660,0,-6" VerticalAlignment="Top">
+                <TextBlock HorizontalAlignment="Left" Margin="10,553,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Wiederholung" VerticalAlignment="Top" Width="340" FontSize="20"/>
+                <RadioButton Content="Einmalig" HorizontalAlignment="Left" Margin="10,590,0,0" VerticalAlignment="Top" Width="46"/>
+                <CalendarDatePicker HorizontalAlignment="Left" Margin="113,591,0,0" VerticalAlignment="Top" Width="237"/>
+                <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,622,0,0" VerticalAlignment="Top" Width="46"/>
+                <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,653,0,0" VerticalAlignment="Top" Width="46"/>
+                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,684,0,-10" VerticalAlignment="Top" Width="46"/>
+                <Button Content="Mo" HorizontalAlignment="Left" Margin="39,715,0,-41" VerticalAlignment="Top"/>
+                <Button Content="Di" HorizontalAlignment="Left" Margin="86,715,0,-41" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+                <Button Content="Mi" HorizontalAlignment="Left" Margin="125,715,0,-41" VerticalAlignment="Top"/>
+                <Button Content="Do" HorizontalAlignment="Left" Margin="167,715,0,-41" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+                <Button Content="Fr" HorizontalAlignment="Left" Margin="211,715,0,-41" VerticalAlignment="Top" Foreground="White" Background="Black"/>
+                <Button Content="Sa" HorizontalAlignment="Left" Margin="249,715,0,-41" VerticalAlignment="Top"/>
+                <Button Content="So" HorizontalAlignment="Left" Margin="290,715,0,-41" VerticalAlignment="Top"/>
+                <Button HorizontalAlignment="Left" Margin="250,761,0,-107" VerticalAlignment="Top">
                     <StackPanel>
                         <SymbolIcon x:ConnectionId='1' x:Name="plus"/>
                         <TextBlock>
@@ -55,6 +55,27 @@
                         </TextBlock>
                     </StackPanel>
                 </Button>
+                <ListView HorizontalAlignment="Left" Margin="10,347,0,0" VerticalAlignment="Top" Width="340"/>
+                <Rectangle Fill="#FFDDDDDD" HorizontalAlignment="Left" Height="59" Margin="10,352,0,0" VerticalAlignment="Top" Width="340"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="22" TextAlignment="Right">
+                    <Run Text="7:25"/>
+                    <LineBreak/>
+                    <Run Text="7:58"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="59" Margin="75,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextAlignment="Center" Padding="5">
+                    <Run Foreground="#FF666666" Text="Umst."/>
+                    <LineBreak/>
+                    <Run FontSize="22" Text="1"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="59" Margin="135,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Padding="5" FontSize="11">
+                    <Run FontWeight="Bold" Text="S3 - Germersheim "/>
+                    <Run Text="bis "/>
+                    <Run Text="Wiesloch-Walldorf"/>
+                    <LineBreak/>
+                    <Run FontWeight="Bold" Text="BUS 707 - SAP Campus"/>
+                    <Run FontWeight="Bold" Text=" "/>
+                    <Run Text="bis Ziel"/>
+                </TextBlock>
             </Grid>
         </ScrollViewer>
 
