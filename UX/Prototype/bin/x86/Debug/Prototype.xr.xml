@@ -21,6 +21,7 @@
       <RootProperty Name="RequestedTheme" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
       <RootProperty Name="BottomAppBar" />
