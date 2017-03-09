@@ -1,4 +1,5 @@
 {
+  "locked": false,
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
@@ -331,7 +332,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -2292,7 +2293,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -4135,7 +4136,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -5945,7 +5946,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -7791,7 +7792,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -9601,7 +9602,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -11447,7 +11448,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
@@ -13643,11 +13644,13 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
-      "sha512": "Qxe4fblviCn2oFf7C4ahCsZHC0GzRa7Tz5z+L1QUHUljY3Oj/TMoT1O0jJ+ru6RcJ9qS8yFw/jIvstg2dxxpGA==",
+    "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+      "sha512": "LfzU68PVP33nqsuSlO5xAYuoI/itVKz4VVJSIunrS7iqqxE3sy0Q+VvtoYnFcBAoGnY83ZVn8Mnc9HYqOBiPmg==",
       "type": "package",
-      "path": "microsoft.xaml.behaviors.uwp.managed/1.1.0",
+      "path": "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0",
       "files": [
+        "Microsoft.Xaml.Behaviors.Uwp.Managed.2.0.0.nupkg.sha512",
+        "Microsoft.Xaml.Behaviors.Uwp.Managed.nuspec",
         "lib/uap10.0/Design/Microsoft.Xaml.Interactions.Design.dll",
         "lib/uap10.0/Design/Microsoft.Xaml.Interactivity.Design.dll",
         "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
@@ -13655,9 +13658,7 @@
         "lib/uap10.0/Microsoft.Xaml.Interactions.xml",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
-        "lib/uap10.0/Microsoft.Xaml.Interactivity.xml",
-        "microsoft.xaml.behaviors.uwp.managed.1.1.0.nupkg.sha512",
-        "microsoft.xaml.behaviors.uwp.managed.nuspec"
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.xml"
       ]
     },
     "Newtonsoft.Json/9.0.1": {
@@ -16502,47 +16503,11 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "Microsoft.Toolkit.Uwp.UI.Controls >= 1.3.1"
+      "Microsoft.Toolkit.Uwp.UI.Controls >= 1.3.1",
+      "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.0"
     ],
     "UAP,Version=v10.0": []
   },
-  "packageFolders": {
-    "C:\\Users\\D064992\\.nuget\\packages\\": {}
-  },
-  "project": {
-    "restore": {
-      "projectUniqueName": "C:\\Users\\D064992\\Documents\\Visual Studio 2017\\Projects\\UX\\UX\\Prototype\\Prototype.csproj",
-      "projectName": "Prototype",
-      "projectPath": "C:\\Users\\D064992\\Documents\\Visual Studio 2017\\Projects\\UX\\UX\\Prototype\\Prototype.csproj",
-      "projectJsonPath": "C:\\Users\\D064992\\Documents\\Visual Studio 2017\\Projects\\UX\\UX\\Prototype\\project.json",
-      "projectStyle": "ProjectJson"
-    },
-    "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-      "Microsoft.Toolkit.Uwp.UI.Controls": "1.3.1"
-    },
-    "frameworks": {
-      "uap10.0": {}
-    },
-    "runtimes": {
-      "win10-arm": {
-        "#import": []
-      },
-      "win10-arm-aot": {
-        "#import": []
-      },
-      "win10-x64": {
-        "#import": []
-      },
-      "win10-x64-aot": {
-        "#import": []
-      },
-      "win10-x86": {
-        "#import": []
-      },
-      "win10-x86-aot": {
-        "#import": []
-      }
-    }
-  }
+  "tools": {},
+  "projectFileToolGroups": {}
 }
