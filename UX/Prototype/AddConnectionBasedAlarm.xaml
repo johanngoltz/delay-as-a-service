@@ -1,18 +1,17 @@
 ﻿<Page
-    x:Class="Prototype.MainPage2"
+    x:Class="Prototype.AddConnectionBasedAlarm"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Prototype"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    RequestedTheme="Light">
+    mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="360"/>
+        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2"/>
 
-        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Margin="10,10,0,0" Foreground="White"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="588" Margin="0,52,0,0" VerticalAlignment="Top" Width="360">
+        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Margin="10,10,0,0" Foreground="White" Grid.ColumnSpan="2"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="588" Margin="0,52,0,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
             <Grid>
                 <TimePicker HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Width="340"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>

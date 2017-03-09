@@ -157,30 +157,30 @@ namespace Prototype.Prototype_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[40];
-            _typeNameTable[0] = "Prototype.CreateAlarmPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Prototype.Detail_Station_Info";
-            _typeNameTable[4] = "Prototype.JourneyDetailPage";
-            _typeNameTable[5] = "Blend.SampleData.SampleDataSource.SampleDataSource";
-            _typeNameTable[6] = "Object";
-            _typeNameTable[7] = "Blend.SampleData.SampleDataSource.Alarms";
-            _typeNameTable[8] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
-            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
-            _typeNameTable[10] = "Blend.SampleData.SampleDataSource.AlarmsItem";
-            _typeNameTable[11] = "Blend.SampleData.SampleDataSource.Route";
-            _typeNameTable[12] = "Blend.SampleData.SampleDataSource.Time";
-            _typeNameTable[13] = "Prototype.ScrollModeConverter";
-            _typeNameTable[14] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[15] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[16] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[17] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[18] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[19] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[20] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[21] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[22] = "String";
-            _typeNameTable[23] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
+            _typeNameTable[0] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[3] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[5] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[7] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[8] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
+            _typeNameTable[11] = "Prototype.CreateAlarmPage";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[14] = "Prototype.Detail_Station_Info";
+            _typeNameTable[15] = "Prototype.JourneyDetailPage";
+            _typeNameTable[16] = "Blend.SampleData.SampleDataSource.SampleDataSource";
+            _typeNameTable[17] = "Blend.SampleData.SampleDataSource.Alarms";
+            _typeNameTable[18] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
+            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>";
+            _typeNameTable[20] = "Blend.SampleData.SampleDataSource.AlarmsItem";
+            _typeNameTable[21] = "Blend.SampleData.SampleDataSource.Route";
+            _typeNameTable[22] = "Blend.SampleData.SampleDataSource.Time";
+            _typeNameTable[23] = "Prototype.ScrollModeConverter";
             _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior";
             _typeNameTable[25] = "Microsoft.Xaml.Interactions.Core.ComparisonConditionType";
             _typeNameTable[26] = "System.Enum";
@@ -189,8 +189,8 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeNameTable[29] = "Windows.UI.Xaml.FrameworkElement";
             _typeNameTable[30] = "Boolean";
             _typeNameTable[31] = "Prototype.MainPage";
-            _typeNameTable[32] = "Prototype.MainPage1";
-            _typeNameTable[33] = "Prototype.MainPage2";
+            _typeNameTable[32] = "Prototype.AddTimeBasedAlarm";
+            _typeNameTable[33] = "Prototype.AddConnectionBasedAlarm";
             _typeNameTable[34] = "Blend.SampleData.SampleDataSource.Interval";
             _typeNameTable[35] = "Blend.SampleData.SampleDataSource.Departure";
             _typeNameTable[36] = "Blend.SampleData.SampleDataSource.Days";
@@ -199,30 +199,30 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeNameTable[39] = "Blend.SampleData.SampleDataSource.DaysItem";
 
             _typeTable = new global::System.Type[40];
-            _typeTable[0] = typeof(global::Prototype.CreateAlarmPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Prototype.Detail_Station_Info);
-            _typeTable[4] = typeof(global::Prototype.JourneyDetailPage);
-            _typeTable[5] = typeof(global::Blend.SampleData.SampleDataSource.SampleDataSource);
-            _typeTable[6] = typeof(global::System.Object);
-            _typeTable[7] = typeof(global::Blend.SampleData.SampleDataSource.Alarms);
-            _typeTable[8] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
-            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
-            _typeTable[10] = typeof(global::Blend.SampleData.SampleDataSource.AlarmsItem);
-            _typeTable[11] = typeof(global::Blend.SampleData.SampleDataSource.Route);
-            _typeTable[12] = typeof(global::Blend.SampleData.SampleDataSource.Time);
-            _typeTable[13] = typeof(global::Prototype.ScrollModeConverter);
-            _typeTable[14] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[15] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[17] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[18] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[20] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[21] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[22] = typeof(global::System.String);
-            _typeTable[23] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
+            _typeTable[0] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[5] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[7] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[8] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
+            _typeTable[11] = typeof(global::Prototype.CreateAlarmPage);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[14] = typeof(global::Prototype.Detail_Station_Info);
+            _typeTable[15] = typeof(global::Prototype.JourneyDetailPage);
+            _typeTable[16] = typeof(global::Blend.SampleData.SampleDataSource.SampleDataSource);
+            _typeTable[17] = typeof(global::Blend.SampleData.SampleDataSource.Alarms);
+            _typeTable[18] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
+            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>);
+            _typeTable[20] = typeof(global::Blend.SampleData.SampleDataSource.AlarmsItem);
+            _typeTable[21] = typeof(global::Blend.SampleData.SampleDataSource.Route);
+            _typeTable[22] = typeof(global::Blend.SampleData.SampleDataSource.Time);
+            _typeTable[23] = typeof(global::Prototype.ScrollModeConverter);
             _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior);
             _typeTable[25] = typeof(global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType);
             _typeTable[26] = typeof(global::System.Enum);
@@ -231,8 +231,8 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeTable[29] = typeof(global::Windows.UI.Xaml.FrameworkElement);
             _typeTable[30] = typeof(global::System.Boolean);
             _typeTable[31] = typeof(global::Prototype.MainPage);
-            _typeTable[32] = typeof(global::Prototype.MainPage1);
-            _typeTable[33] = typeof(global::Prototype.MainPage2);
+            _typeTable[32] = typeof(global::Prototype.AddTimeBasedAlarm);
+            _typeTable[33] = typeof(global::Prototype.AddConnectionBasedAlarm);
             _typeTable[34] = typeof(global::Blend.SampleData.SampleDataSource.Interval);
             _typeTable[35] = typeof(global::Blend.SampleData.SampleDataSource.Departure);
             _typeTable[36] = typeof(global::Blend.SampleData.SampleDataSource.Days);
@@ -273,60 +273,60 @@ namespace Prototype.Prototype_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_CreateAlarmPage() { return new global::Prototype.CreateAlarmPage(); }
-        private object Activate_3_Detail_Station_Info() { return new global::Prototype.Detail_Station_Info(); }
-        private object Activate_4_JourneyDetailPage() { return new global::Prototype.JourneyDetailPage(); }
-        private object Activate_5_SampleDataSource() { return new global::Blend.SampleData.SampleDataSource.SampleDataSource(); }
-        private object Activate_7_Alarms() { return new global::Blend.SampleData.SampleDataSource.Alarms(); }
-        private object Activate_8_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
-        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
-        private object Activate_10_AlarmsItem() { return new global::Blend.SampleData.SampleDataSource.AlarmsItem(); }
-        private object Activate_11_Route() { return new global::Blend.SampleData.SampleDataSource.Route(); }
-        private object Activate_12_Time() { return new global::Blend.SampleData.SampleDataSource.Time(); }
-        private object Activate_13_ScrollModeConverter() { return new global::Prototype.ScrollModeConverter(); }
-        private object Activate_15_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_18_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_21_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_23_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
+        private object Activate_2_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_5_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_8_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_10_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
+        private object Activate_11_CreateAlarmPage() { return new global::Prototype.CreateAlarmPage(); }
+        private object Activate_14_Detail_Station_Info() { return new global::Prototype.Detail_Station_Info(); }
+        private object Activate_15_JourneyDetailPage() { return new global::Prototype.JourneyDetailPage(); }
+        private object Activate_16_SampleDataSource() { return new global::Blend.SampleData.SampleDataSource.SampleDataSource(); }
+        private object Activate_17_Alarms() { return new global::Blend.SampleData.SampleDataSource.Alarms(); }
+        private object Activate_18_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
+        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.AlarmsItem>(); }
+        private object Activate_20_AlarmsItem() { return new global::Blend.SampleData.SampleDataSource.AlarmsItem(); }
+        private object Activate_21_Route() { return new global::Blend.SampleData.SampleDataSource.Route(); }
+        private object Activate_22_Time() { return new global::Blend.SampleData.SampleDataSource.Time(); }
+        private object Activate_23_ScrollModeConverter() { return new global::Prototype.ScrollModeConverter(); }
         private object Activate_24_DataTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior(); }
         private object Activate_28_GoToStateAction() { return new global::Microsoft.Xaml.Interactions.Core.GoToStateAction(); }
         private object Activate_31_MainPage() { return new global::Prototype.MainPage(); }
-        private object Activate_32_MainPage1() { return new global::Prototype.MainPage1(); }
-        private object Activate_33_MainPage2() { return new global::Prototype.MainPage2(); }
+        private object Activate_32_AddTimeBasedAlarm() { return new global::Prototype.AddTimeBasedAlarm(); }
+        private object Activate_33_AddConnectionBasedAlarm() { return new global::Prototype.AddConnectionBasedAlarm(); }
         private object Activate_34_Interval() { return new global::Blend.SampleData.SampleDataSource.Interval(); }
         private object Activate_35_Departure() { return new global::Blend.SampleData.SampleDataSource.Departure(); }
         private object Activate_36_Days() { return new global::Blend.SampleData.SampleDataSource.Days(); }
         private object Activate_37_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
         private object Activate_38_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
         private object Activate_39_DaysItem() { return new global::Blend.SampleData.SampleDataSource.DaysItem(); }
-        private void VectorAdd_7_Alarms(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
-            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_8_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
-            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_9_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
-            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_15_BehaviorCollection(object instance, object item)
+        private void VectorAdd_2_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_ActionCollection(object instance, object item)
+        private void VectorAdd_8_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_Alarms(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_18_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_19_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
+            var newItem = (global::Blend.SampleData.SampleDataSource.AlarmsItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_36_Days(object instance, object item)
@@ -358,162 +358,162 @@ namespace Prototype.Prototype_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Prototype.CreateAlarmPage
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_CreateAlarmPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  Prototype.Detail_Station_Info
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_3_Detail_Station_Info;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Prototype.JourneyDetailPage
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_JourneyDetailPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  Blend.SampleData.SampleDataSource.SampleDataSource
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_5_SampleDataSource;
-                userType.AddMemberName("Alarms");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  Object
-                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Blend.SampleData.SampleDataSource.Alarms
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>"));
-                userType.CollectionAdd = VectorAdd_7_Alarms;
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>"));
-                userType.Activator = Activate_8_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_8_ObservableCollection;
-                xamlType = userType;
-                break;
-
-            case 9:   //  System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_Collection;
-                userType.CollectionAdd = VectorAdd_9_Collection;
-                xamlType = userType;
-                break;
-
-            case 10:   //  Blend.SampleData.SampleDataSource.AlarmsItem
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_AlarmsItem;
-                userType.AddMemberName("Route");
-                userType.AddMemberName("Time");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 11:   //  Blend.SampleData.SampleDataSource.Route
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_Route;
-                userType.AddMemberName("BeginStation");
-                userType.AddMemberName("EndStation");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 12:   //  Blend.SampleData.SampleDataSource.Time
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_Time;
-                userType.AddMemberName("Interval");
-                userType.AddMemberName("Departure");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  Prototype.ScrollModeConverter
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_ScrollModeConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 0:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 1:   //  Object
+                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_15_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_2_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 3:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Windows.UI.Xaml.DependencyObject
+            case 4:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 5:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_18_EventTriggerBehavior;
+                userType.Activator = Activate_5_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 6:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 7:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 21:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 8:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_21_ActionCollection;
+                userType.CollectionAdd = VectorAdd_8_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  String
+            case 9:   //  String
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
+            case 10:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_23_NavigateToPageAction;
+                userType.Activator = Activate_10_NavigateToPageAction;
                 userType.AddMemberName("TargetPage");
                 userType.AddMemberName("Parameter");
+                xamlType = userType;
+                break;
+
+            case 11:   //  Prototype.CreateAlarmPage
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_CreateAlarmPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  Prototype.Detail_Station_Info
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_14_Detail_Station_Info;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Prototype.JourneyDetailPage
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_JourneyDetailPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Blend.SampleData.SampleDataSource.SampleDataSource
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_16_SampleDataSource;
+                userType.AddMemberName("Alarms");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Blend.SampleData.SampleDataSource.Alarms
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>"));
+                userType.CollectionAdd = VectorAdd_17_Alarms;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.AlarmsItem>
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>"));
+                userType.Activator = Activate_18_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_18_ObservableCollection;
+                xamlType = userType;
+                break;
+
+            case 19:   //  System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.AlarmsItem>
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_19_Collection;
+                userType.CollectionAdd = VectorAdd_19_Collection;
+                xamlType = userType;
+                break;
+
+            case 20:   //  Blend.SampleData.SampleDataSource.AlarmsItem
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_20_AlarmsItem;
+                userType.AddMemberName("Route");
+                userType.AddMemberName("Time");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 21:   //  Blend.SampleData.SampleDataSource.Route
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_21_Route;
+                userType.AddMemberName("BeginStation");
+                userType.AddMemberName("EndStation");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  Blend.SampleData.SampleDataSource.Time
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_22_Time;
+                userType.AddMemberName("Interval");
+                userType.AddMemberName("Departure");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  Prototype.ScrollModeConverter
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_23_ScrollModeConverter;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -572,16 +572,16 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 32:   //  Prototype.MainPage1
+            case 32:   //  Prototype.AddTimeBasedAlarm
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_MainPage1;
+                userType.Activator = Activate_32_AddTimeBasedAlarm;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Prototype.MainPage2
+            case 33:   //  Prototype.AddConnectionBasedAlarm
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_MainPage2;
+                userType.Activator = Activate_33_AddConnectionBasedAlarm;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -691,88 +691,88 @@ namespace Prototype.Prototype_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_SampleDataSource_Alarms(object instance)
-        {
-            var that = (global::Blend.SampleData.SampleDataSource.SampleDataSource)instance;
-            return that.Alarms;
-        }
-        private object get_1_AlarmsItem_Route(object instance)
-        {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            return that.Route;
-        }
-        private void set_1_AlarmsItem_Route(object instance, object Value)
-        {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            that.Route = (global::Blend.SampleData.SampleDataSource.Route)Value;
-        }
-        private object get_2_AlarmsItem_Time(object instance)
-        {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            return that.Time;
-        }
-        private void set_2_AlarmsItem_Time(object instance, object Value)
-        {
-            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
-            that.Time = (global::Blend.SampleData.SampleDataSource.Time)Value;
-        }
-        private object get_3_Interaction_Behaviors(object instance)
+        private object get_0_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_3_Interaction_Behaviors(object instance, object Value)
+        private void set_0_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_4_Trigger_Actions(object instance)
+        private object get_1_Trigger_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
-        private object get_5_EventTriggerBehavior_EventName(object instance)
+        private object get_2_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_5_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_2_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_6_EventTriggerBehavior_SourceObject(object instance)
+        private object get_3_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_6_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_3_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_7_Behavior_AssociatedObject(object instance)
+        private object get_4_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_8_NavigateToPageAction_TargetPage(object instance)
+        private object get_5_NavigateToPageAction_TargetPage(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             return that.TargetPage;
         }
-        private void set_8_NavigateToPageAction_TargetPage(object instance, object Value)
+        private void set_5_NavigateToPageAction_TargetPage(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             that.TargetPage = (global::System.String)Value;
         }
-        private object get_9_NavigateToPageAction_Parameter(object instance)
+        private object get_6_NavigateToPageAction_Parameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             return that.Parameter;
         }
-        private void set_9_NavigateToPageAction_Parameter(object instance, object Value)
+        private void set_6_NavigateToPageAction_Parameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             that.Parameter = (global::System.Object)Value;
+        }
+        private object get_7_SampleDataSource_Alarms(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.SampleDataSource)instance;
+            return that.Alarms;
+        }
+        private object get_8_AlarmsItem_Route(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            return that.Route;
+        }
+        private void set_8_AlarmsItem_Route(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            that.Route = (global::Blend.SampleData.SampleDataSource.Route)Value;
+        }
+        private object get_9_AlarmsItem_Time(object instance)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            return that.Time;
+        }
+        private void set_9_AlarmsItem_Time(object instance, object Value)
+        {
+            var that = (global::Blend.SampleData.SampleDataSource.AlarmsItem)instance;
+            that.Time = (global::Blend.SampleData.SampleDataSource.Time)Value;
         }
         private object get_10_DataTriggerBehavior_Binding(object instance)
         {
@@ -917,72 +917,72 @@ namespace Prototype.Prototype_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "Blend.SampleData.SampleDataSource.SampleDataSource.Alarms":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.SampleDataSource");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Alarms", "Blend.SampleData.SampleDataSource.Alarms");
-                xamlMember.Getter = get_0_SampleDataSource_Alarms;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.Route":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Route", "Blend.SampleData.SampleDataSource.Route");
-                xamlMember.Getter = get_1_AlarmsItem_Route;
-                xamlMember.Setter = set_1_AlarmsItem_Route;
-                break;
-            case "Blend.SampleData.SampleDataSource.AlarmsItem.Time":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Time", "Blend.SampleData.SampleDataSource.Time");
-                xamlMember.Getter = get_2_AlarmsItem_Time;
-                xamlMember.Setter = set_2_AlarmsItem_Time;
-                break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_3_Interaction_Behaviors;
-                xamlMember.Setter = set_3_Interaction_Behaviors;
+                xamlMember.Getter = get_0_Interaction_Behaviors;
+                xamlMember.Setter = set_0_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactivity.Trigger.Actions":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_Trigger_Actions;
+                xamlMember.Getter = get_1_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_5_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_2_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_2_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_6_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_3_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_3_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_7_Behavior_AssociatedObject;
+                xamlMember.Getter = get_4_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.NavigateToPageAction.TargetPage":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.NavigateToPageAction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "TargetPage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_NavigateToPageAction_TargetPage;
-                xamlMember.Setter = set_8_NavigateToPageAction_TargetPage;
+                xamlMember.Getter = get_5_NavigateToPageAction_TargetPage;
+                xamlMember.Setter = set_5_NavigateToPageAction_TargetPage;
                 break;
             case "Microsoft.Xaml.Interactions.Core.NavigateToPageAction.Parameter":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.NavigateToPageAction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Parameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_NavigateToPageAction_Parameter;
-                xamlMember.Setter = set_9_NavigateToPageAction_Parameter;
+                xamlMember.Getter = get_6_NavigateToPageAction_Parameter;
+                xamlMember.Setter = set_6_NavigateToPageAction_Parameter;
+                break;
+            case "Blend.SampleData.SampleDataSource.SampleDataSource.Alarms":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.SampleDataSource");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Alarms", "Blend.SampleData.SampleDataSource.Alarms");
+                xamlMember.Getter = get_7_SampleDataSource_Alarms;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.Route":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Route", "Blend.SampleData.SampleDataSource.Route");
+                xamlMember.Getter = get_8_AlarmsItem_Route;
+                xamlMember.Setter = set_8_AlarmsItem_Route;
+                break;
+            case "Blend.SampleData.SampleDataSource.AlarmsItem.Time":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.AlarmsItem");
+                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Time", "Blend.SampleData.SampleDataSource.Time");
+                xamlMember.Getter = get_9_AlarmsItem_Time;
+                xamlMember.Setter = set_9_AlarmsItem_Time;
                 break;
             case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Binding":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");

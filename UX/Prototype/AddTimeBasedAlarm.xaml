@@ -1,21 +1,15 @@
 ﻿<Page
-    x:Class="Prototype.MainPage1"
+    x:Class="Prototype.AddTimeBasedAlarm"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Prototype"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    RequestedTheme="Light">
+    mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Margin="10,10,0,0" Foreground="White" Grid.ColumnSpan="2"/>
-
         <ScrollViewer Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="588" Margin="0,52,0,0" VerticalAlignment="Top" Width="360">
             <Grid>
                 <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,330,0,0" TextWrapping="Wrap" Text="Beginn" VerticalAlignment="Top" Width="98" FontSize="18"/>
@@ -47,9 +41,11 @@
                 <Button Content="Sa" HorizontalAlignment="Left" Margin="249,614,0,-6" VerticalAlignment="Top"/>
                 <Button Content="So" HorizontalAlignment="Left" Margin="290,614,0,-6" VerticalAlignment="Top"/>
                 <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top">
-                    <StackPanel>
-                        <SymbolIcon Symbol="Add" Margin="0,0,10,0"></SymbolIcon>
-                        <TextBlock>Hinzufügen</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
+                        <TextBlock>
+                            <Run Text="Hinzufügen"/>
+                        </TextBlock>
                     </StackPanel>
                 </Button>
             </Grid>
