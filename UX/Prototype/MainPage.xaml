@@ -9,6 +9,7 @@
     x:Class="Prototype.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
+        <local:VisibilityConverter x:Key="VisibilityConverter"/>
         <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
         <local:ScrollModeConverter x:Key="ScrollModeConverter"/>
     </Page.Resources>
@@ -89,11 +90,12 @@
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Margin" Value="0,10"/>
                             </Style>
                         </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Vertical" Margin="0">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition/>
@@ -106,33 +108,7 @@
                                         </StackPanel>
                                         <ToggleSwitch Grid.Column="1" HorizontalAlignment="Right" OffContent="" OnContent="" MinWidth="0" VerticalAlignment="Top" VerticalContentAlignment="Top" Margin="0,-7,0,0"/>
                                     </Grid>
-                                    <StackPanel Orientation="Horizontal" x:Name="_this">
-                                        <VisualStateManager.VisualStateGroups>
-                                            <VisualStateGroup x:Name="myStates">
-                                                <VisualState x:Name="ExactTime">
-                                                    <VisualState.Setters>
-                                                        <Setter Target="und.Visibility" Value="Collapsed"/>
-                                                        <Setter Target="lastDeparture.Visibility" Value="Collapsed"/>
-                                                    </VisualState.Setters>
-                                                </VisualState>
-                                                <VisualState x:Name="TimeRange">
-                                                    <VisualState.Setters>
-                                                        <Setter Target="und.Visibility" Value="Visible"/>
-                                                        <Setter Target="lastDeparture.Visibility" Value="Visible"/>
-                                                    </VisualState.Setters>
-                                                </VisualState>
-                                            </VisualStateGroup>
-                                        </VisualStateManager.VisualStateGroups>
-                                        <Interactivity:Interaction.Behaviors>
-                                            <Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="Equal" Value="6:54">
-                                                <Core:DataTriggerBehavior.Actions>
-                                                    <Core:GoToStateAction StateName="ExactTime" TargetObject="{Binding ElementName=_this}"/>
-                                                </Core:DataTriggerBehavior.Actions>
-                                            </Core:DataTriggerBehavior>
-                                            <!--<Core:DataTriggerBehavior Binding="{Binding Time.Departure.Earliest}" ComparisonCondition="NotEqual" Value="{Binding Time.Departure.Latest}">
-                                                <Core:GoToStateAction StateName="TimeRange" TargetObject="{Binding RelativeSource={RelativeSource Self}}"/>
-                                            </Core:DataTriggerBehavior>-->
-                                        </Interactivity:Interaction.Behaviors>
+                                    <StackPanel Orientation="Horizontal">
                                         <ItemsControl ItemsSource="{Binding Time.Interval.Days}">
                                             <ItemsControl.ItemsPanel>
                                                 <ItemsPanelTemplate>
@@ -148,10 +124,10 @@
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>
-                                        <TextBlock Text="zw." Padding="0,0,3,0"/>
+                                        <TextBlock Text="" Padding="3,0"/>
                                         <TextBlock Text="{Binding Time.Departure.Earliest}"/>
-                                        <TextBlock x:Name="und" Text="und" Margin="3,0,3,0"/>
-                                        <TextBlock x:Name="lastDeparture" Text="{Binding Time.Departure.Latest}"/>
+                                        <TextBlock x:Name="und" Text="bis" Margin="3,0" Visibility="{Binding Time.Departure, ConverterParameter=Visibility.Visible, Converter={StaticResource VisibilityConverter}, FallbackValue=Visibility.Visible, Mode=OneTime}"/>
+                                        <TextBlock x:Name="lastDeparture" Text="{Binding Time.Departure.Latest}" Visibility="{Binding Time.Departure, ConverterParameter=Visibility.Visible, Converter={StaticResource VisibilityConverter}, FallbackValue=Visibility.Visible, Mode=OneTime}"/>
                                     </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
