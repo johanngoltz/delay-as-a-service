@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>413B181A9A4DA862AE275C317FCB9BBFC2FD6240467AD9FB7F87CB1F5FAA28F6</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>DFE867C6D8A1CC1565419C43F3E6D8E600DA33C7E5DA5F0E2F0FFBBF9FB3F64B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>08b405a9-1eb3-45f8-9440-a3d882cf93e0_1.0.0.0_x86__tg4733q60qp3p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>08b405a9-1eb3-45f8-9440-a3d882cf93e0_tg4733q60qp3p!App</RegisteredUserModeAppID>
     <RegisteredPackageID>08b405a9-1eb3-45f8-9440-a3d882cf93e0</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-09T12:41:02.861</Modified>
+      <Modified>2017-03-09T13:50:46.022</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Prototype.exe">
       <PackagePath>entrypoint\Prototype.exe</PackagePath>
-      <Modified>2017-03-09T12:40:54.736</Modified>
+      <Modified>2017-03-09T13:50:39.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -492,6 +492,10 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2016-08-09T06:14:36.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Assets\plan.png">
+      <PackagePath>Assets\plan.png</PackagePath>
+      <Modified>2017-03-09T13:06:32.987</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Assets\QR-Code_Willkommen_bei_Wikipedia.png">
       <PackagePath>Assets\QR-Code_Willkommen_bei_Wikipedia.png</PackagePath>
       <Modified>2017-03-09T12:37:29.846</Modified>
@@ -556,7 +560,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Prototype.xr.xml">
       <PackagePath>Prototype.xr.xml</PackagePath>
-      <Modified>2017-03-09T12:40:54.421</Modified>
+      <Modified>2017-03-09T13:50:38.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -641,11 +645,11 @@
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-09T12:40:55.673</Modified>
+      <Modified>2017-03-09T13:50:39.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\bin\x86\Debug\Core\Prototype.exe">
       <PackagePath>Prototype.exe</PackagePath>
-      <Modified>2017-03-09T12:41:02.802</Modified>
+      <Modified>2017-03-09T13:50:45.986</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
