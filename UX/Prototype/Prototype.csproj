@@ -120,7 +120,7 @@
     <None Include="Prototype_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\QR-Code_Willkommen_bei_Wikipedia.png" />
+    <Content Include="Assets\plan.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
