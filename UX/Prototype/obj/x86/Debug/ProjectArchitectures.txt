@@ -1,1 +1,1 @@
-C:\Users\D064986\Documents\Visual Studio 2015\Projects\delay-as-a-service\UX\Prototype\Prototype.csproj;x86
+C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\Prototype.csproj;x86

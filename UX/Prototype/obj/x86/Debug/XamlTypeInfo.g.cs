@@ -156,7 +156,7 @@ namespace Prototype.Prototype_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[37];
+            _typeNameTable = new string[40];
             _typeNameTable[0] = "Prototype.CreateAlarmPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -176,26 +176,29 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeNameTable[16] = "Windows.UI.Xaml.DependencyObjectCollection";
             _typeNameTable[17] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[18] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[19] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[20] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[21] = "String";
-            _typeNameTable[22] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
-            _typeNameTable[23] = "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior";
-            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.ComparisonConditionType";
-            _typeNameTable[25] = "System.Enum";
-            _typeNameTable[26] = "System.ValueType";
-            _typeNameTable[27] = "Microsoft.Xaml.Interactions.Core.GoToStateAction";
-            _typeNameTable[28] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[29] = "Boolean";
-            _typeNameTable[30] = "Prototype.MainPage";
-            _typeNameTable[31] = "Blend.SampleData.SampleDataSource.Interval";
-            _typeNameTable[32] = "Blend.SampleData.SampleDataSource.Departure";
-            _typeNameTable[33] = "Blend.SampleData.SampleDataSource.Days";
-            _typeNameTable[34] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>";
-            _typeNameTable[35] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>";
-            _typeNameTable[36] = "Blend.SampleData.SampleDataSource.DaysItem";
+            _typeNameTable[19] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[20] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[21] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[22] = "String";
+            _typeNameTable[23] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
+            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior";
+            _typeNameTable[25] = "Microsoft.Xaml.Interactions.Core.ComparisonConditionType";
+            _typeNameTable[26] = "System.Enum";
+            _typeNameTable[27] = "System.ValueType";
+            _typeNameTable[28] = "Microsoft.Xaml.Interactions.Core.GoToStateAction";
+            _typeNameTable[29] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[30] = "Boolean";
+            _typeNameTable[31] = "Prototype.MainPage";
+            _typeNameTable[32] = "Prototype.MainPage1";
+            _typeNameTable[33] = "Prototype.MainPage2";
+            _typeNameTable[34] = "Blend.SampleData.SampleDataSource.Interval";
+            _typeNameTable[35] = "Blend.SampleData.SampleDataSource.Departure";
+            _typeNameTable[36] = "Blend.SampleData.SampleDataSource.Days";
+            _typeNameTable[37] = "System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>";
+            _typeNameTable[38] = "System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>";
+            _typeNameTable[39] = "Blend.SampleData.SampleDataSource.DaysItem";
 
-            _typeTable = new global::System.Type[37];
+            _typeTable = new global::System.Type[40];
             _typeTable[0] = typeof(global::Prototype.CreateAlarmPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -215,24 +218,27 @@ namespace Prototype.Prototype_XamlTypeInfo
             _typeTable[16] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
             _typeTable[17] = typeof(global::Windows.UI.Xaml.DependencyObject);
             _typeTable[18] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[20] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[21] = typeof(global::System.String);
-            _typeTable[22] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
-            _typeTable[23] = typeof(global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior);
-            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType);
-            _typeTable[25] = typeof(global::System.Enum);
-            _typeTable[26] = typeof(global::System.ValueType);
-            _typeTable[27] = typeof(global::Microsoft.Xaml.Interactions.Core.GoToStateAction);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[29] = typeof(global::System.Boolean);
-            _typeTable[30] = typeof(global::Prototype.MainPage);
-            _typeTable[31] = typeof(global::Blend.SampleData.SampleDataSource.Interval);
-            _typeTable[32] = typeof(global::Blend.SampleData.SampleDataSource.Departure);
-            _typeTable[33] = typeof(global::Blend.SampleData.SampleDataSource.Days);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>);
-            _typeTable[35] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>);
-            _typeTable[36] = typeof(global::Blend.SampleData.SampleDataSource.DaysItem);
+            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[20] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[21] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[22] = typeof(global::System.String);
+            _typeTable[23] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
+            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior);
+            _typeTable[25] = typeof(global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType);
+            _typeTable[26] = typeof(global::System.Enum);
+            _typeTable[27] = typeof(global::System.ValueType);
+            _typeTable[28] = typeof(global::Microsoft.Xaml.Interactions.Core.GoToStateAction);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[30] = typeof(global::System.Boolean);
+            _typeTable[31] = typeof(global::Prototype.MainPage);
+            _typeTable[32] = typeof(global::Prototype.MainPage1);
+            _typeTable[33] = typeof(global::Prototype.MainPage2);
+            _typeTable[34] = typeof(global::Blend.SampleData.SampleDataSource.Interval);
+            _typeTable[35] = typeof(global::Blend.SampleData.SampleDataSource.Departure);
+            _typeTable[36] = typeof(global::Blend.SampleData.SampleDataSource.Days);
+            _typeTable[37] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>);
+            _typeTable[38] = typeof(global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>);
+            _typeTable[39] = typeof(global::Blend.SampleData.SampleDataSource.DaysItem);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -280,17 +286,19 @@ namespace Prototype.Prototype_XamlTypeInfo
         private object Activate_13_ScrollModeConverter() { return new global::Prototype.ScrollModeConverter(); }
         private object Activate_15_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
         private object Activate_18_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_20_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_22_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
-        private object Activate_23_DataTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior(); }
-        private object Activate_27_GoToStateAction() { return new global::Microsoft.Xaml.Interactions.Core.GoToStateAction(); }
-        private object Activate_30_MainPage() { return new global::Prototype.MainPage(); }
-        private object Activate_31_Interval() { return new global::Blend.SampleData.SampleDataSource.Interval(); }
-        private object Activate_32_Departure() { return new global::Blend.SampleData.SampleDataSource.Departure(); }
-        private object Activate_33_Days() { return new global::Blend.SampleData.SampleDataSource.Days(); }
-        private object Activate_34_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
-        private object Activate_35_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
-        private object Activate_36_DaysItem() { return new global::Blend.SampleData.SampleDataSource.DaysItem(); }
+        private object Activate_21_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_23_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
+        private object Activate_24_DataTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior(); }
+        private object Activate_28_GoToStateAction() { return new global::Microsoft.Xaml.Interactions.Core.GoToStateAction(); }
+        private object Activate_31_MainPage() { return new global::Prototype.MainPage(); }
+        private object Activate_32_MainPage1() { return new global::Prototype.MainPage1(); }
+        private object Activate_33_MainPage2() { return new global::Prototype.MainPage2(); }
+        private object Activate_34_Interval() { return new global::Blend.SampleData.SampleDataSource.Interval(); }
+        private object Activate_35_Departure() { return new global::Blend.SampleData.SampleDataSource.Departure(); }
+        private object Activate_36_Days() { return new global::Blend.SampleData.SampleDataSource.Days(); }
+        private object Activate_37_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
+        private object Activate_38_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Blend.SampleData.SampleDataSource.DaysItem>(); }
+        private object Activate_39_DaysItem() { return new global::Blend.SampleData.SampleDataSource.DaysItem(); }
         private void VectorAdd_7_Alarms(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.AlarmsItem>)instance;
@@ -315,25 +323,25 @@ namespace Prototype.Prototype_XamlTypeInfo
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_20_ActionCollection(object instance, object item)
+        private void VectorAdd_21_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_33_Days(object instance, object item)
+        private void VectorAdd_36_Days(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
             var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_ObservableCollection(object instance, object item)
+        private void VectorAdd_37_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
             var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_35_Collection(object instance, object item)
+        private void VectorAdd_38_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Blend.SampleData.SampleDataSource.DaysItem>)instance;
             var newItem = (global::Blend.SampleData.SampleDataSource.DaysItem)item;
@@ -469,52 +477,57 @@ namespace Prototype.Prototype_XamlTypeInfo
                 break;
 
             case 18:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
                 userType.Activator = Activate_18_EventTriggerBehavior;
-                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
-                userType.AddMemberName("Actions");
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 19:   //  Microsoft.Xaml.Interactivity.Trigger
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
+                userType.AddMemberName("Actions");
+                xamlType = userType;
+                break;
+
+            case 20:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 21:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_20_ActionCollection;
+                userType.CollectionAdd = VectorAdd_21_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  String
+            case 22:   //  String
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
+            case 23:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_22_NavigateToPageAction;
+                userType.Activator = Activate_23_NavigateToPageAction;
                 userType.AddMemberName("TargetPage");
                 userType.AddMemberName("Parameter");
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.Xaml.Interactions.Core.DataTriggerBehavior
-                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
-                userType.Activator = Activate_23_DataTriggerBehavior;
-                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Actions");
-                userType.AddMemberName("Actions");
+            case 24:   //  Microsoft.Xaml.Interactions.Core.DataTriggerBehavior
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
+                userType.Activator = Activate_24_DataTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Binding");
                 userType.AddMemberName("ComparisonCondition");
                 userType.AddMemberName("Value");
                 xamlType = userType;
                 break;
 
-            case 24:   //  Microsoft.Xaml.Interactions.Core.ComparisonConditionType
+            case 25:   //  Microsoft.Xaml.Interactions.Core.ComparisonConditionType
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Equal", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.Equal);
                 userType.AddEnumValue("NotEqual", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.NotEqual);
@@ -525,82 +538,96 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  System.Enum
+            case 26:   //  System.Enum
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.ValueType
+            case 27:   //  System.ValueType
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.Xaml.Interactions.Core.GoToStateAction
+            case 28:   //  Microsoft.Xaml.Interactions.Core.GoToStateAction
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_27_GoToStateAction;
+                userType.Activator = Activate_28_GoToStateAction;
                 userType.AddMemberName("StateName");
                 userType.AddMemberName("TargetObject");
                 userType.AddMemberName("UseTransitions");
                 xamlType = userType;
                 break;
 
-            case 28:   //  Windows.UI.Xaml.FrameworkElement
+            case 29:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Boolean
+            case 30:   //  Boolean
                 xamlType = new global::Prototype.Prototype_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Prototype.MainPage
+            case 31:   //  Prototype.MainPage
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_MainPage;
+                userType.Activator = Activate_31_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Blend.SampleData.SampleDataSource.Interval
+            case 32:   //  Prototype.MainPage1
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_32_MainPage1;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  Prototype.MainPage2
+                userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_33_MainPage2;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Blend.SampleData.SampleDataSource.Interval
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_31_Interval;
+                userType.Activator = Activate_34_Interval;
                 userType.AddMemberName("Days");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Blend.SampleData.SampleDataSource.Departure
+            case 35:   //  Blend.SampleData.SampleDataSource.Departure
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_32_Departure;
+                userType.Activator = Activate_35_Departure;
                 userType.AddMemberName("Earliest");
                 userType.AddMemberName("Latest");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Blend.SampleData.SampleDataSource.Days
+            case 36:   //  Blend.SampleData.SampleDataSource.Days
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>"));
-                userType.CollectionAdd = VectorAdd_33_Days;
+                userType.CollectionAdd = VectorAdd_36_Days;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>
+            case 37:   //  System.Collections.ObjectModel.ObservableCollection`1<Blend.SampleData.SampleDataSource.DaysItem>
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>"));
-                userType.Activator = Activate_34_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_34_ObservableCollection;
+                userType.Activator = Activate_37_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_37_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 35:   //  System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>
+            case 38:   //  System.Collections.ObjectModel.Collection`1<Blend.SampleData.SampleDataSource.DaysItem>
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_Collection;
-                userType.CollectionAdd = VectorAdd_35_Collection;
+                userType.Activator = Activate_38_Collection;
+                userType.CollectionAdd = VectorAdd_38_Collection;
                 xamlType = userType;
                 break;
 
-            case 36:   //  Blend.SampleData.SampleDataSource.DaysItem
+            case 39:   //  Blend.SampleData.SampleDataSource.DaysItem
                 userType = new global::Prototype.Prototype_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_36_DaysItem;
+                userType.Activator = Activate_39_DaysItem;
                 userType.AddMemberName("Name");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -697,9 +724,9 @@ namespace Prototype.Prototype_XamlTypeInfo
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_4_EventTriggerBehavior_Actions(object instance)
+        private object get_4_Trigger_Actions(object instance)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
         private object get_5_EventTriggerBehavior_EventName(object instance)
@@ -747,142 +774,137 @@ namespace Prototype.Prototype_XamlTypeInfo
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             that.Parameter = (global::System.Object)Value;
         }
-        private object get_10_DataTriggerBehavior_Actions(object instance)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
-            return that.Actions;
-        }
-        private object get_11_DataTriggerBehavior_Binding(object instance)
+        private object get_10_DataTriggerBehavior_Binding(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             return that.Binding;
         }
-        private void set_11_DataTriggerBehavior_Binding(object instance, object Value)
+        private void set_10_DataTriggerBehavior_Binding(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             that.Binding = (global::System.Object)Value;
         }
-        private object get_12_DataTriggerBehavior_ComparisonCondition(object instance)
+        private object get_11_DataTriggerBehavior_ComparisonCondition(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             return that.ComparisonCondition;
         }
-        private void set_12_DataTriggerBehavior_ComparisonCondition(object instance, object Value)
+        private void set_11_DataTriggerBehavior_ComparisonCondition(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             that.ComparisonCondition = (global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType)Value;
         }
-        private object get_13_DataTriggerBehavior_Value(object instance)
+        private object get_12_DataTriggerBehavior_Value(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             return that.Value;
         }
-        private void set_13_DataTriggerBehavior_Value(object instance, object Value)
+        private void set_12_DataTriggerBehavior_Value(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_14_GoToStateAction_StateName(object instance)
+        private object get_13_GoToStateAction_StateName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             return that.StateName;
         }
-        private void set_14_GoToStateAction_StateName(object instance, object Value)
+        private void set_13_GoToStateAction_StateName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             that.StateName = (global::System.String)Value;
         }
-        private object get_15_GoToStateAction_TargetObject(object instance)
+        private object get_14_GoToStateAction_TargetObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             return that.TargetObject;
         }
-        private void set_15_GoToStateAction_TargetObject(object instance, object Value)
+        private void set_14_GoToStateAction_TargetObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             that.TargetObject = (global::Windows.UI.Xaml.FrameworkElement)Value;
         }
-        private object get_16_GoToStateAction_UseTransitions(object instance)
+        private object get_15_GoToStateAction_UseTransitions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             return that.UseTransitions;
         }
-        private void set_16_GoToStateAction_UseTransitions(object instance, object Value)
+        private void set_15_GoToStateAction_UseTransitions(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
             that.UseTransitions = (global::System.Boolean)Value;
         }
-        private object get_17_Route_BeginStation(object instance)
+        private object get_16_Route_BeginStation(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             return that.BeginStation;
         }
-        private void set_17_Route_BeginStation(object instance, object Value)
+        private void set_16_Route_BeginStation(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             that.BeginStation = (global::System.String)Value;
         }
-        private object get_18_Route_EndStation(object instance)
+        private object get_17_Route_EndStation(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             return that.EndStation;
         }
-        private void set_18_Route_EndStation(object instance, object Value)
+        private void set_17_Route_EndStation(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Route)instance;
             that.EndStation = (global::System.String)Value;
         }
-        private object get_19_Time_Interval(object instance)
+        private object get_18_Time_Interval(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
             return that.Interval;
         }
-        private void set_19_Time_Interval(object instance, object Value)
+        private void set_18_Time_Interval(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
             that.Interval = (global::Blend.SampleData.SampleDataSource.Interval)Value;
         }
-        private object get_20_Time_Departure(object instance)
+        private object get_19_Time_Departure(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
             return that.Departure;
         }
-        private void set_20_Time_Departure(object instance, object Value)
+        private void set_19_Time_Departure(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Time)instance;
             that.Departure = (global::Blend.SampleData.SampleDataSource.Departure)Value;
         }
-        private object get_21_Interval_Days(object instance)
+        private object get_20_Interval_Days(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Interval)instance;
             return that.Days;
         }
-        private object get_22_DaysItem_Name(object instance)
+        private object get_21_DaysItem_Name(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.DaysItem)instance;
             return that.Name;
         }
-        private void set_22_DaysItem_Name(object instance, object Value)
+        private void set_21_DaysItem_Name(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.DaysItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_23_Departure_Earliest(object instance)
+        private object get_22_Departure_Earliest(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
             return that.Earliest;
         }
-        private void set_23_Departure_Earliest(object instance, object Value)
+        private void set_22_Departure_Earliest(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
             that.Earliest = (global::System.String)Value;
         }
-        private object get_24_Departure_Latest(object instance)
+        private object get_23_Departure_Latest(object instance)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
             return that.Latest;
         }
-        private void set_24_Departure_Latest(object instance, object Value)
+        private void set_23_Departure_Latest(object instance, object Value)
         {
             var that = (global::Blend.SampleData.SampleDataSource.Departure)instance;
             that.Latest = (global::System.String)Value;
@@ -921,11 +943,11 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlMember.Getter = get_3_Interaction_Behaviors;
                 xamlMember.Setter = set_3_Interaction_Behaviors;
                 break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+            case "Microsoft.Xaml.Interactivity.Trigger.Actions":
+                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_4_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
@@ -962,102 +984,95 @@ namespace Prototype.Prototype_XamlTypeInfo
                 xamlMember.Getter = get_9_NavigateToPageAction_Parameter;
                 xamlMember.Setter = set_9_NavigateToPageAction_Parameter;
                 break;
-            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Actions":
-                userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
-                xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_DataTriggerBehavior_Actions;
-                xamlMember.SetIsReadOnly();
-                break;
             case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Binding":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Binding", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_DataTriggerBehavior_Binding;
-                xamlMember.Setter = set_11_DataTriggerBehavior_Binding;
+                xamlMember.Getter = get_10_DataTriggerBehavior_Binding;
+                xamlMember.Setter = set_10_DataTriggerBehavior_Binding;
                 break;
             case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.ComparisonCondition":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "ComparisonCondition", "Microsoft.Xaml.Interactions.Core.ComparisonConditionType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_DataTriggerBehavior_ComparisonCondition;
-                xamlMember.Setter = set_12_DataTriggerBehavior_ComparisonCondition;
+                xamlMember.Getter = get_11_DataTriggerBehavior_ComparisonCondition;
+                xamlMember.Setter = set_11_DataTriggerBehavior_ComparisonCondition;
                 break;
             case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Value":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Value", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_DataTriggerBehavior_Value;
-                xamlMember.Setter = set_13_DataTriggerBehavior_Value;
+                xamlMember.Getter = get_12_DataTriggerBehavior_Value;
+                xamlMember.Setter = set_12_DataTriggerBehavior_Value;
                 break;
             case "Microsoft.Xaml.Interactions.Core.GoToStateAction.StateName":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "StateName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_GoToStateAction_StateName;
-                xamlMember.Setter = set_14_GoToStateAction_StateName;
+                xamlMember.Getter = get_13_GoToStateAction_StateName;
+                xamlMember.Setter = set_13_GoToStateAction_StateName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.GoToStateAction.TargetObject":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "TargetObject", "Windows.UI.Xaml.FrameworkElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_GoToStateAction_TargetObject;
-                xamlMember.Setter = set_15_GoToStateAction_TargetObject;
+                xamlMember.Getter = get_14_GoToStateAction_TargetObject;
+                xamlMember.Setter = set_14_GoToStateAction_TargetObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.GoToStateAction.UseTransitions":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "UseTransitions", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_GoToStateAction_UseTransitions;
-                xamlMember.Setter = set_16_GoToStateAction_UseTransitions;
+                xamlMember.Getter = get_15_GoToStateAction_UseTransitions;
+                xamlMember.Setter = set_15_GoToStateAction_UseTransitions;
                 break;
             case "Blend.SampleData.SampleDataSource.Route.BeginStation":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Route");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "BeginStation", "String");
-                xamlMember.Getter = get_17_Route_BeginStation;
-                xamlMember.Setter = set_17_Route_BeginStation;
+                xamlMember.Getter = get_16_Route_BeginStation;
+                xamlMember.Setter = set_16_Route_BeginStation;
                 break;
             case "Blend.SampleData.SampleDataSource.Route.EndStation":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Route");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "EndStation", "String");
-                xamlMember.Getter = get_18_Route_EndStation;
-                xamlMember.Setter = set_18_Route_EndStation;
+                xamlMember.Getter = get_17_Route_EndStation;
+                xamlMember.Setter = set_17_Route_EndStation;
                 break;
             case "Blend.SampleData.SampleDataSource.Time.Interval":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Time");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Interval", "Blend.SampleData.SampleDataSource.Interval");
-                xamlMember.Getter = get_19_Time_Interval;
-                xamlMember.Setter = set_19_Time_Interval;
+                xamlMember.Getter = get_18_Time_Interval;
+                xamlMember.Setter = set_18_Time_Interval;
                 break;
             case "Blend.SampleData.SampleDataSource.Time.Departure":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Time");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Departure", "Blend.SampleData.SampleDataSource.Departure");
-                xamlMember.Getter = get_20_Time_Departure;
-                xamlMember.Setter = set_20_Time_Departure;
+                xamlMember.Getter = get_19_Time_Departure;
+                xamlMember.Setter = set_19_Time_Departure;
                 break;
             case "Blend.SampleData.SampleDataSource.Interval.Days":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Interval");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Days", "Blend.SampleData.SampleDataSource.Days");
-                xamlMember.Getter = get_21_Interval_Days;
+                xamlMember.Getter = get_20_Interval_Days;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Blend.SampleData.SampleDataSource.DaysItem.Name":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.DaysItem");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_22_DaysItem_Name;
-                xamlMember.Setter = set_22_DaysItem_Name;
+                xamlMember.Getter = get_21_DaysItem_Name;
+                xamlMember.Setter = set_21_DaysItem_Name;
                 break;
             case "Blend.SampleData.SampleDataSource.Departure.Earliest":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Departure");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Earliest", "String");
-                xamlMember.Getter = get_23_Departure_Earliest;
-                xamlMember.Setter = set_23_Departure_Earliest;
+                xamlMember.Getter = get_22_Departure_Earliest;
+                xamlMember.Setter = set_22_Departure_Earliest;
                 break;
             case "Blend.SampleData.SampleDataSource.Departure.Latest":
                 userType = (global::Prototype.Prototype_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Blend.SampleData.SampleDataSource.Departure");
                 xamlMember = new global::Prototype.Prototype_XamlTypeInfo.XamlMember(this, "Latest", "String");
-                xamlMember.Getter = get_24_Departure_Latest;
-                xamlMember.Setter = set_24_Departure_Latest;
+                xamlMember.Getter = get_23_Departure_Latest;
+                xamlMember.Setter = set_23_Departure_Latest;
                 break;
             }
             return xamlMember;

@@ -1,3 +1,5 @@
+AddConnectionBasedAlarm.xbf
+AddTimeBasedAlarm.xbf
 App.xbf
 CreateAlarmPage.xbf
 Detail_Station_Info.xbf
