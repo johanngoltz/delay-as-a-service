@@ -46,7 +46,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="3">
+            <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="0">
                 <FlipView.Items>
                     <RelativePanel Padding="10" Background="#FF46FF00">
                         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
