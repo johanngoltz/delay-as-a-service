@@ -75,9 +75,35 @@
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="white">
                         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="Black"/>
-                        <TextBlock x:Name="nextLink1" RelativePanel.Below="textBlock4" Text="6:47 Karlsruhe → Walldorf" FontSize="20" Margin="0,10" Foreground="#ffe81c" />
-                        <TextBlock x:Name="nextLink2" RelativePanel.Below="nextLink1" Text="6:54 Karlsruhe → Walldorf" FontSize="20" Margin="0,5" Foreground="#FF46FF00" />
-                        <TextBlock x:Name="nextLink3" RelativePanel.Below="nextLink2" Text="7:24 Karlsruhe → Walldorf" FontSize="20" Margin="0,5" Foreground="#e80b0b"/>
+                        <Grid RelativePanel.Below="textBlock4" Margin="0,5" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock x:Name="delayTime1" Text="6:53" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="0" Grid.Row="0"/>
+                            <TextBlock x:Name="time1" Text="6:47" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="1" Grid.Row="0"/>
+                            <Rectangle Height="2" Width="35" Grid.Column="1" Grid.Row="0" RelativePanel.AlignVerticalCenterWith="time1" RelativePanel.AlignHorizontalCenterWith="time1" Fill="Black" Stroke="Black" />
+                            <TextBlock x:Name="nextLink1" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="2" Grid.Row="0"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="0" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+                            
+                            <TextBlock x:Name="delayTime2" Text="6:56" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="0" Grid.Row="1"/>
+                            <TextBlock x:Name="time2" Text="6:54" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="1" Grid.Row="1"/>
+                            <Rectangle Height="2"  Width="35" Grid.Column="1" Grid.Row="1" RelativePanel.AlignVerticalCenterWith="time2" RelativePanel.AlignHorizontalCenterWith="time2" Fill="Black" Stroke="Black" />
+                            <TextBlock x:Name="nextLink2" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="2" Grid.Row="1"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="1" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+
+                            <TextBlock x:Name="time3" Text="7:24" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="1" Grid.Row="2"/>
+                            <TextBlock x:Name="nextLink3" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="2" Grid.Row="2"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="2" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+                        </Grid>
                     </RelativePanel>
                 </FlipView.Items>
                 <Interactivity:Interaction.Behaviors>
