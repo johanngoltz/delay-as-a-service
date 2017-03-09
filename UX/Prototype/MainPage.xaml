@@ -75,7 +75,7 @@
                     </RelativePanel>
                 </FlipView.Items>
                 <Interactivity:Interaction.Behaviors>
-                    <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=flipView}">
+                    <Core:EventTriggerBehavior EventName="PointerEntered" SourceObject="{Binding ElementName=textBlock}">
                         <Core:EventTriggerBehavior.Actions>
                             <Core:NavigateToPageAction TargetPage="Prototype.JourneyDetailPage" />
                         </Core:EventTriggerBehavior.Actions>
