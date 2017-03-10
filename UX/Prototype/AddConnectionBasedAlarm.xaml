@@ -25,17 +25,17 @@
                 <CalendarDatePicker HorizontalAlignment="Left" Margin="113,591,0,0" VerticalAlignment="Top" Width="237"/>
                 <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,622,0,0" VerticalAlignment="Top" Width="46"/>
                 <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,653,0,0" VerticalAlignment="Top" Width="46"/>
-                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,684,0,-10" VerticalAlignment="Top" Width="46"/>
-                <Button Content="Mo" HorizontalAlignment="Left" Margin="39,715,0,-41" VerticalAlignment="Top"/>
-                <Button Content="Di" HorizontalAlignment="Left" Margin="86,715,0,-41" VerticalAlignment="Top" Background="Black" Foreground="White"/>
-                <Button Content="Mi" HorizontalAlignment="Left" Margin="125,715,0,-41" VerticalAlignment="Top"/>
-                <Button Content="Do" HorizontalAlignment="Left" Margin="167,715,0,-41" VerticalAlignment="Top" Background="Black" Foreground="White"/>
-                <Button Content="Fr" HorizontalAlignment="Left" Margin="211,715,0,-41" VerticalAlignment="Top" Foreground="White" Background="Black"/>
-                <Button Content="Sa" HorizontalAlignment="Left" Margin="249,715,0,-41" VerticalAlignment="Top"/>
-                <Button Content="So" HorizontalAlignment="Left" Margin="290,715,0,-41" VerticalAlignment="Top"/>
-                <Button HorizontalAlignment="Left" Margin="250,761,0,-107" VerticalAlignment="Top">
-                    <StackPanel>
-                        <SymbolIcon x:Name="plus"/>
+                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,684,0,0" VerticalAlignment="Top" Width="46"/>
+                <Button Content="Mo" HorizontalAlignment="Left" Margin="39,715,0,0" VerticalAlignment="Top"/>
+                <Button Content="Di" HorizontalAlignment="Left" Margin="86,715,0,0" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+                <Button Content="Mi" HorizontalAlignment="Left" Margin="125,715,0,0" VerticalAlignment="Top"/>
+                <Button Content="Do" HorizontalAlignment="Left" Margin="167,715,0,0" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+                <Button Content="Fr" HorizontalAlignment="Left" Margin="211,715,0,0" VerticalAlignment="Top" Foreground="White" Background="Black"/>
+                <Button Content="Sa" HorizontalAlignment="Left" Margin="249,715,0,0" VerticalAlignment="Top"/>
+                <Button Content="So" HorizontalAlignment="Left" Margin="290,715,0,0" VerticalAlignment="Top"/>
+                <Button HorizontalAlignment="Left" Margin="250,761,0,10" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                         <TextBlock>
                             <Run Text="Hinzufügen"/>
                         </TextBlock>
