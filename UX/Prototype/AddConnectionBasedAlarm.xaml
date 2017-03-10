@@ -8,10 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2"/>
-
-        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Margin="10,10,0,0" Foreground="White" Grid.ColumnSpan="2"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="588" Margin="0,52,0,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
+        <ScrollViewer HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="360">
             <Grid>
                 <TimePicker HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Width="340"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>
