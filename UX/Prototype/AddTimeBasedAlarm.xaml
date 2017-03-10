@@ -5,6 +5,7 @@
     xmlns:local="using:Prototype"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -41,12 +42,19 @@
                 <Button Content="Fr" HorizontalAlignment="Left" Margin="211,614,0,0" VerticalAlignment="Top" Foreground="White" Background="Black"/>
                 <Button Content="Sa" HorizontalAlignment="Left" Margin="249,614,0,0" VerticalAlignment="Top"/>
                 <Button Content="So" HorizontalAlignment="Left" Margin="290,614,0,0" VerticalAlignment="Top"/>
-                <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top">
+                <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top" x:Name="addTimeAlarmButton">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                         <TextBlock>
                             <Run Text="Hinzufügen"/>
                         </TextBlock>
+                        <Interactivity:Interaction.Behaviors>
+                            <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addTimeAlarmButton}">
+                                <Core:EventTriggerBehavior.Actions>
+                                    <Core:NavigateToPageAction TargetPage="Prototype.MainPage" />
+                                </Core:EventTriggerBehavior.Actions>
+                            </Core:EventTriggerBehavior>
+                        </Interactivity:Interaction.Behaviors>
                     </StackPanel>
                 </Button>
             </Grid>

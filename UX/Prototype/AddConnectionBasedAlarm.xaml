@@ -5,6 +5,7 @@
     xmlns:local="using:Prototype"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -33,12 +34,19 @@
                 <Button Content="Fr" HorizontalAlignment="Left" Margin="211,707,0,-7" VerticalAlignment="Top" Foreground="White" Background="#FF404040"/>
                 <Button Content="Sa" HorizontalAlignment="Left" Margin="249,707,0,-7" VerticalAlignment="Top"/>
                 <Button Content="So" HorizontalAlignment="Left" Margin="290,707,0,-7" VerticalAlignment="Top"/>
-                <Button HorizontalAlignment="Right" Margin="0,756,10,-56" VerticalAlignment="Top" Height="32">
+                <Button HorizontalAlignment="Right" Margin="0,756,10,10" VerticalAlignment="Top" Height="32" x:Name="addConnectionAlarmButton">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                         <TextBlock>
                             <Run Text="Hinzufügen"/>
                         </TextBlock>
+                        <Interactivity:Interaction.Behaviors>
+                            <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addConnectionAlarmButton}">
+                                <Core:EventTriggerBehavior.Actions>
+                                    <Core:NavigateToPageAction TargetPage="Prototype.MainPage" />
+                                </Core:EventTriggerBehavior.Actions>
+                            </Core:EventTriggerBehavior>
+                        </Interactivity:Interaction.Behaviors>
                     </StackPanel>
                 </Button>
                 <RadioButton Content="Abfahrt" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="140" GroupName="one" IsChecked="True"/>
