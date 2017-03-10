@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <Canvas Background="#FF7A6E6E" Opacity="0.8" Margin="0">
-            <Image Source="Assets/plan.png" Width="340" Height="363" />
+            <Image Source="Assets/plan.png" Width="429" Height="484" />
         </Canvas>
         <!--TextBox Text="Fahrplanübersicht" HorizontalAlignment="Center" VerticalAlignment="Center" ></-->
 
