@@ -12,9 +12,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions><!--
         <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" Grid.RowSpan="2" VerticalAlignment="Top" Width="360"/>
-        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Grid.RowSpan="2" Margin="10,10,10,10" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Grid.RowSpan="2" Margin="10,10,10,10" Foreground="White"/>-->
         <TextBlock HorizontalAlignment="Center" Margin="10,162,10,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="Welchen Alarmtyp willst du anlegen?" VerticalAlignment="Top" Width="340" FontSize="22" TextAlignment="Center"/>
         <Button Content="Eine bestimmte Verbindung überwachen" x:Name="addConnectionAlarmButton" HorizontalAlignment="Left" Height="43" Margin="10,257,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="340">
             <Interactivity:Interaction.Behaviors>
