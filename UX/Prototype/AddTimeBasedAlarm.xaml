@@ -9,11 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="360">
-            <Grid Height="836">
+        <ScrollViewer Grid.ColumnSpan="1" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+            <Grid Width="360">
                 <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,330,0,0" TextWrapping="Wrap" Text="Beginn" VerticalAlignment="Top" Width="98" FontSize="18"/>
                 <TimePicker HorizontalAlignment="Left" Margin="108,329,0,0" VerticalAlignment="Top"/>
                 <TimePicker HorizontalAlignment="Left" Margin="108,366,0,0" VerticalAlignment="Top"/>
@@ -27,7 +26,7 @@
                 <TextBlock Grid.Row="5" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Via" Width="98"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,218,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,287,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Zeitraum" VerticalAlignment="Top" Width="340" FontSize="20"/>
-                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Alarm anlegen" VerticalAlignment="Top" Width="340"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Alarm anlegen" VerticalAlignment="Top" Width="330"/>
                 <TextBlock Grid.Row="2" HorizontalAlignment="Left" Margin="10,84,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Strecke" VerticalAlignment="Top" Width="340" FontSize="20"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,452,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Wiederholung" VerticalAlignment="Top" Width="340" FontSize="20"/>
                 <RadioButton Content="Einmalig" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="46"/>

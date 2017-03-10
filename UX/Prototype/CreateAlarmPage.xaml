@@ -13,10 +13,8 @@
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="52" Grid.RowSpan="2" VerticalAlignment="Top" Width="360"/>
-        <TextBlock HorizontalAlignment="Left" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Daas" VerticalAlignment="Top" Width="340" Grid.RowSpan="2" Margin="10,10,10,10" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" Margin="10,162,10,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="Welchen Alarmtyp willst du anlegen?" VerticalAlignment="Top" Width="340" FontSize="22" TextAlignment="Center"/>
-        <Button Content="Eine bestimmte Verbindung überwachen" x:Name="addConnectionAlarmButton" HorizontalAlignment="Left" Height="43" Margin="10,257,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="340">
+        <Button Content="Eine bestimmte Verbindung überwachen" x:Name="addConnectionAlarmButton" HorizontalAlignment="Center" Height="43" Margin="10,257,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="340">
             <Interactivity:Interaction.Behaviors>
                 <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addConnectionAlarmButton}">
                     <Core:EventTriggerBehavior.Actions>
@@ -25,7 +23,7 @@
                 </Core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
         </Button>
-        <Button Content="Einen Zeitpunkt/raum überwachen" x:Name="addTimeAlarmButton" HorizontalAlignment="Left" Height="43" Margin="10,335,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="340">
+        <Button Content="Einen Zeitpunkt/raum überwachen" x:Name="addTimeAlarmButton" HorizontalAlignment="Center" Height="43" Margin="10,335,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="340">
             <Interactivity:Interaction.Behaviors>
                 <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addTimeAlarmButton}">
                     <Core:EventTriggerBehavior.Actions>
@@ -34,8 +32,8 @@
                 </Core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="10,300,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="z.B. für fixe Termine" VerticalAlignment="Top" Width="340" FontSize="14" TextAlignment="Center" Foreground="#FF333333"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,378,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" FontSize="14" TextAlignment="Center" Foreground="#FF333333">
+        <TextBlock HorizontalAlignment="Center" Margin="10,300,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="z.B. für fixe Termine" VerticalAlignment="Top" Width="340" FontSize="14" TextAlignment="Center" Foreground="#FF333333"/>
+        <TextBlock HorizontalAlignment="Center" Margin="10,378,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" FontSize="14" TextAlignment="Center" Foreground="#FF333333">
             <Run Text="z.B. für "/>
             <Run Text="Pendelstrecken"/>
         </TextBlock>

@@ -379,7 +379,6 @@ C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\bin\x86\D
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\bin\x86\Debug\System.Xml.XmlSerializer.dll
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
-C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\obj\x86\Debug\Prototype.csprojResolveAssemblyReference.cache
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\obj\x86\Debug\App.g.i.cs
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\obj\x86\Debug\App.g.cs
 C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\obj\x86\Debug\CreateAlarmPage.g.i.cs
@@ -736,3 +735,4 @@ C:\Users\D064998\Documents\DHBW\04_Semester\UX UI\DaaS\UX\Prototype\obj\x86\Debu
 C:\Users\D064998\Documents\DHBW\04_Semester\UX UI\DaaS\UX\Prototype\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\D064998\Documents\DHBW\04_Semester\UX UI\DaaS\UX\Prototype\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\D064998\Documents\DHBW\04_Semester\UX UI\DaaS\UX\Prototype\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\D064992\Documents\Visual Studio 2017\Projects\UX\UX\Prototype\obj\x86\Debug\Prototype.csprojResolveAssemblyReference.cache
