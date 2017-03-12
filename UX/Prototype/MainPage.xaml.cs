@@ -47,26 +47,14 @@ namespace Prototype
         }
     }
 
-    public class ScrollModeConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-            return ScrollMode.Auto;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            return ScrollMode.Auto;
-        }
-    }
-
     public class VisibilityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
+            throw new NotImplementedException();/*
             var departure = value as Blend.SampleData.SampleDataSource.Departure;
             if (!(parameter is bool)) parameter = true;
-            return (departure.Earliest == departure.Latest) == (bool)parameter ? Visibility.Collapsed : Visibility.Visible;
+            return (departure.Earliest == departure.Latest) == (bool)parameter ? Visibility.Collapsed : Visibility.Visible;*/
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

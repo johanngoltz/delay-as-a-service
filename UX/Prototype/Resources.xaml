@@ -1,0 +1,71 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Prototype" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core" xmlns:Behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors"
+    xmlns:selectors="using:Prototype.Selectors" mc:Ignorable="d">
+    <selectors:WordListItemTemplateSelector x:Key="WordListItemTemplateSelector"/>
+    <DataTemplate x:Key="RouteListItemTemplate">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Name, FallbackValue=Karlsruhe}"/>
+            <TextBlock Text="→" Margin="7,0" x:Name="Arrow">                                
+                <Interactivity:Interaction.Behaviors>
+                    <Core:DataTriggerBehavior Binding="{Binding WaypointType}" Value="Destination" ComparisonCondition="Equal">
+                        <Core:ChangePropertyAction PropertyName="Visibility" TargetObject="{Binding ElementName=Arrow}">
+                            <Core:ChangePropertyAction.Value>
+                                <Visibility>Collapsed</Visibility>
+                            </Core:ChangePropertyAction.Value>
+                        </Core:ChangePropertyAction>
+                    </Core:DataTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </TextBlock>
+        </StackPanel>
+    </DataTemplate>
+    <Style x:Key="SubtitleStyle" TargetType="TextBlock">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="AlarmListWhenStyle" TargetType="TextBlock" BasedOn="{StaticResource SubtitleStyle}">
+    </Style>
+    <DataTemplate x:Key="AlarmListItemTemplate">
+        <RelativePanel Margin="0">
+            <ItemsControl x:Name="Route" ItemsSource="{Binding Stops}" ItemTemplate="{StaticResource RouteListItemTemplate}" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <ToggleSwitch x:Name="OnOff" HorizontalAlignment="Right" OffContent="" OnContent="" MinWidth="0" VerticalAlignment="Top" VerticalContentAlignment="Top" Margin="7,0,0,0" HorizontalContentAlignment="Right" Width="46" RelativePanel.LeftOf="" RelativePanel.RightOf="Route" RelativePanel.AlignRightWithPanel="True"/>
+            <StackPanel x:Name="When" Orientation="Horizontal" d:LayoutOverrides="TopPosition, BottomPosition" RelativePanel.AlignBottomWithPanel="True">
+                <ItemsControl ItemsSource="{Binding Time.Interval.Days}" ItemTemplateSelector="{StaticResource WordListItemTemplateSelector}">
+                    <ItemsControl.Resources>
+                        <DataTemplate x:Key="DefaultItemTemplate">
+                            <StackPanel Orientation="Horizontal" Padding="0,0,3,0">
+                                <TextBlock Text="{Binding Name}" Style="{StaticResource AlarmListWhenStyle}"/>
+                                <TextBlock Text="," Style="{StaticResource AlarmListWhenStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                        <DataTemplate x:Key="LastItemTemplate">
+                            <StackPanel Orientation="Horizontal" Padding="0,0,3,0">
+                                <TextBlock Text="{Binding Name}" Style="{StaticResource AlarmListWhenStyle}"/>
+                                <TextBlock Text="|" Padding="6,0,3,0" Style="{StaticResource AlarmListWhenStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.Resources>
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </ItemsControl>
+                <TextBlock Text="{Binding Time.Departure.Earliest, FallbackValue=6:45}" Style="{StaticResource AlarmListWhenStyle}"/>
+                <TextBlock Text="bis" Margin="3,0" Style="{StaticResource AlarmListWhenStyle}"/>
+                <TextBlock Text="{Binding Time.Departure.Latest, FallbackValue=8:00}" Style="{StaticResource AlarmListWhenStyle}"/>
+            </StackPanel>
+        </RelativePanel>
+    </DataTemplate>
+
+</ResourceDictionary>
