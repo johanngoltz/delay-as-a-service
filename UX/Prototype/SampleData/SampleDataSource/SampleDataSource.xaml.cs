@@ -100,6 +100,16 @@ namespace Blend.SampleData.SampleDataSource
                 }
             }
         }
+
+        private Stops _Stops = new Stops();
+
+        public Stops Stops
+        {
+            get
+            {
+                return this._Stops;
+            }
+        }
     }
 
     public class Route : INotifyPropertyChanged
@@ -184,9 +194,9 @@ namespace Blend.SampleData.SampleDataSource
             }
         }
 
-        private Departure _Departure = new Departure();
+        private TimeRange _Departure = new TimeRange();
 
-        public Departure Departure
+        public TimeRange Departure
         {
             get
             {
@@ -199,6 +209,25 @@ namespace Blend.SampleData.SampleDataSource
                 {
                     this._Departure = value;
                     this.OnPropertyChanged("Departure");
+                }
+            }
+        }
+
+        private TimeRange _Arrival = new TimeRange();
+
+        public TimeRange Arrival
+        {
+            get
+            {
+                return this._Arrival;
+            }
+
+            set
+            {
+                if (this._Arrival != value)
+                {
+                    this._Arrival = value;
+                    this.OnPropertyChanged("Arrival");
                 }
             }
         }
@@ -225,6 +254,10 @@ namespace Blend.SampleData.SampleDataSource
                 return this._Days;
             }
         }
+    }
+
+    public class Days : System.Collections.ObjectModel.ObservableCollection<DaysItem>
+    { 
     }
 
     public class DaysItem : INotifyPropertyChanged
@@ -259,11 +292,7 @@ namespace Blend.SampleData.SampleDataSource
         }
     }
 
-    public class Days : System.Collections.ObjectModel.ObservableCollection<DaysItem>
-    { 
-    }
-
-    public class Departure : INotifyPropertyChanged
+    public class TimeRange : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -309,6 +338,61 @@ namespace Blend.SampleData.SampleDataSource
                 {
                     this._Latest = value;
                     this.OnPropertyChanged("Latest");
+                }
+            }
+        }
+    }
+
+    public class Stops : System.Collections.ObjectModel.ObservableCollection<StopsItem>
+    { 
+    }
+
+    public class StopsItem : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private string _Name = string.Empty;
+
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+
+            set
+            {
+                if (this._Name != value)
+                {
+                    this._Name = value;
+                    this.OnPropertyChanged("Name");
+                }
+            }
+        }
+
+        private string _WaypointType = string.Empty;
+
+        public string WaypointType
+        {
+            get
+            {
+                return this._WaypointType;
+            }
+
+            set
+            {
+                if (this._WaypointType != value)
+                {
+                    this._WaypointType = value;
+                    this.OnPropertyChanged("WaypointType");
                 }
             }
         }
