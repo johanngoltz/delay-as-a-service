@@ -40,87 +40,85 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <Button Background="{x:Null}" Padding="0" HorizontalAlignment="Stretch">
-                <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
-                    <FlipView.Items>
-                        <RelativePanel Padding="10" Background="#FF46FF00">
-                            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                            <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
-                            <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
-                        </RelativePanel>
-                        <RelativePanel Padding="10" Background="Red">
-                            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                            <TextBlock x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                            <TextBlock x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
-                            <TextBlock x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
-                            <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
-                            <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
-                            <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Keine Alternativverbindung gefunden" FontSize="22"/>
-                        </RelativePanel>
-                        <RelativePanel Padding="10" Background="Red">
-                            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                            <TextBlock x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                            <TextBlock x:Name="routeTextBlock3" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
-                            <TextBlock x:Name="timeTextBlock3" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Margin="10,0"/>
-                            <TextBlock Text="7:55" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="timeTextBlock3"/>
-                            <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Fill="White" Stroke="White"/>
-                            <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Jetzt umsteigen!" FontSize="22"/>
-                        </RelativePanel>
-                        <RelativePanel Padding="10" Background="Red">
-                            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                            <TextBlock x:Name="statusTextBlock5" RelativePanel.Below="textBlock5" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                            <TextBlock x:Name="routeTextBlock5" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock5"/>
-                            <TextBlock x:Name="timeTextBlock5" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock5"/>
-                            <TextBlock x:Name="AAAA" Text="7:54" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Margin="10,0"/>
-                            <Rectangle HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="47" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Fill="White" Stroke="White" Margin="-42.333,-1.333,0,0" RenderTransformOrigin="0.5,0.5">
-                                <Rectangle.RenderTransform>
-                                    <CompositeTransform ScaleY="-1"/>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock5"></Image>
-                        </RelativePanel>
-                        <RelativePanel Padding="10" Background="Black">
-                            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="White"/>
-                            <Grid RelativePanel.Below="textBlock4" Margin="0,5" >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition />
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
+            <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
+                <FlipView.Items>
+                    <RelativePanel Padding="10" Background="#FF46FF00">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                        <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
+                    </RelativePanel>
+                    <RelativePanel Padding="10" Background="Red">
+                        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock2" RelativePanel.Below="textBlock2" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:Name="routeTextBlock2" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock2"/>
+                        <TextBlock x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
+                        <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
+                        <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
+                        <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Keine Alternativverbindung gefunden" FontSize="22"/>
+                    </RelativePanel>
+                    <RelativePanel Padding="10" Background="Red">
+                        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:Name="routeTextBlock3" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
+                        <TextBlock x:Name="timeTextBlock3" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Margin="10,0"/>
+                        <TextBlock Text="7:55" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="timeTextBlock3"/>
+                        <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Fill="White" Stroke="White"/>
+                        <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Jetzt umsteigen!" FontSize="22"/>
+                    </RelativePanel>
+                    <RelativePanel Padding="10" Background="Red">
+                        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="statusTextBlock5" RelativePanel.Below="textBlock5" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                        <TextBlock x:Name="routeTextBlock5" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock5"/>
+                        <TextBlock x:Name="timeTextBlock5" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock5"/>
+                        <TextBlock x:Name="AAAA" Text="7:54" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Margin="10,0"/>
+                        <Rectangle HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="47" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Fill="White" Stroke="White" Margin="-42.333,-1.333,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform ScaleY="-1"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock5"></Image>
+                    </RelativePanel>
+                    <RelativePanel Padding="10" Background="Black">
+                        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="White"/>
+                        <Grid RelativePanel.Below="textBlock4" Margin="0,5" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
 
-                                <TextBlock x:Name="delayTime1" Text="6:53" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="0" Grid.Row="0"/>
-                                <TextBlock x:Name="time1" Text="6:47" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="1" Grid.Row="0"/>
-                                <Rectangle Height="2" Width="35" Grid.Column="1" Grid.Row="0" RelativePanel.AlignVerticalCenterWith="time1" RelativePanel.AlignHorizontalCenterWith="time1" Fill="White" Stroke="White" />
-                                <TextBlock x:Name="nextLink1" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="2" Grid.Row="0"/>
-                                <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="0" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+                            <TextBlock x:Name="delayTime1" Text="6:53" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="0" Grid.Row="0"/>
+                            <TextBlock x:Name="time1" Text="6:47" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="1" Grid.Row="0"/>
+                            <Rectangle Height="2" Width="35" Grid.Column="1" Grid.Row="0" RelativePanel.AlignVerticalCenterWith="time1" RelativePanel.AlignHorizontalCenterWith="time1" Fill="White" Stroke="White" />
+                            <TextBlock x:Name="nextLink1" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#e80b0b" Grid.Column="2" Grid.Row="0"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="0" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
 
-                                <TextBlock x:Name="delayTime2" Text="6:56" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="0" Grid.Row="1"/>
-                                <TextBlock x:Name="time2" Text="6:54" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="1" Grid.Row="1"/>
-                                <Rectangle Height="2"  Width="35" Grid.Column="1" Grid.Row="1" RelativePanel.AlignVerticalCenterWith="time2" RelativePanel.AlignHorizontalCenterWith="time2" Fill="White" Stroke="White" />
-                                <TextBlock x:Name="nextLink2" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="2" Grid.Row="1"/>
-                                <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="1" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+                            <TextBlock x:Name="delayTime2" Text="6:56" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="0" Grid.Row="1"/>
+                            <TextBlock x:Name="time2" Text="6:54" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="1" Grid.Row="1"/>
+                            <Rectangle Height="2"  Width="35" Grid.Column="1" Grid.Row="1" RelativePanel.AlignVerticalCenterWith="time2" RelativePanel.AlignHorizontalCenterWith="time2" Fill="White" Stroke="White" />
+                            <TextBlock x:Name="nextLink2" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#ffe81c"  Grid.Column="2" Grid.Row="1"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="1" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
 
-                                <TextBlock x:Name="time3" Text="7:24" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="1" Grid.Row="2"/>
-                                <TextBlock x:Name="nextLink3" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="2" Grid.Row="2"/>
-                                <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="2" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
-                            </Grid>
-                        </RelativePanel>
-                    </FlipView.Items>
-                    <Interactivity:Interaction.Behaviors>
-                        <Core:EventTriggerBehavior EventName="PointerPressed" SourceObject="{Binding ElementName=flipView}">
-                            <Core:EventTriggerBehavior.Actions>
-                                <Core:NavigateToPageAction TargetPage="Prototype.JourneyDetailPage" />
-                            </Core:EventTriggerBehavior.Actions>
-                        </Core:EventTriggerBehavior>
-                    </Interactivity:Interaction.Behaviors>
-                </FlipView>
-            </Button>
+                            <TextBlock x:Name="time3" Text="7:24" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="1" Grid.Row="2"/>
+                            <TextBlock x:Name="nextLink3" Text="Karlsruhe → Walldorf" FontSize="20" Margin="2,0" Foreground="#FF46FF00" Grid.Column="2" Grid.Row="2"/>
+                            <Button Foreground="Black" Background="LightGray" Grid.Column="3" Grid.Row="2" Margin="2,0" HorizontalAlignment="Right">Nehmen</Button>
+                        </Grid>
+                    </RelativePanel>
+                </FlipView.Items>
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="PointerPressed" SourceObject="{Binding ElementName=flipView}">
+                        <Core:EventTriggerBehavior.Actions>
+                            <Core:NavigateToPageAction TargetPage="Prototype.JourneyDetailPage" />
+                        </Core:EventTriggerBehavior.Actions>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </FlipView>
             <Pivot VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1">
                 <PivotItem>
                     <PivotItem.Header>Alarme</PivotItem.Header>
