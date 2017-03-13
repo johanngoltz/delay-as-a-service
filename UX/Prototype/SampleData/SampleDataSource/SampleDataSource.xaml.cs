@@ -272,21 +272,21 @@ namespace Blend.SampleData.SampleDataSource
             }
         }
 
-        private string _Name = string.Empty;
+        private string _Abbreviaton = string.Empty;
 
-        public string Name
+        public string Abbreviaton
         {
             get
             {
-                return this._Name;
+                return this._Abbreviaton;
             }
 
             set
             {
-                if (this._Name != value)
+                if (this._Abbreviaton != value)
                 {
-                    this._Name = value;
-                    this.OnPropertyChanged("Name");
+                    this._Abbreviaton = value;
+                    this.OnPropertyChanged("Abbreviaton");
                 }
             }
         }

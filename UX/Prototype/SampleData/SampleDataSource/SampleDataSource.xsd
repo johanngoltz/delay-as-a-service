@@ -45,7 +45,7 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="DaysItem">
-    <xs:attribute blend:FormatParameters="1,3" name="Name" type="xs:string" />
+    <xs:attribute blend:FormatParameters="1,3" name="Abbreviaton" type="xs:string" />
   </xs:complexType>
   <xs:complexType name="TimeRange">
     <xs:attribute blend:Format="Uhrzeit" name="Earliest" type="xs:string" />
