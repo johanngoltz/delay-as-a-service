@@ -1,0 +1,34 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Prototype.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    x:Class="Prototype.Controls.TimeDisplay"
+    mc:Ignorable="d"
+    d:DesignHeight="20"
+    d:DesignWidth="400"
+    x:Name="uc">
+
+    <StackPanel Orientation="Horizontal">
+        <Interactivity:Interaction.Behaviors>
+            <Core:DataTriggerBehavior Binding="{Binding From, ElementName=uc, FallbackValue=00:00}" Value="{Binding Till, ElementName=uc, FallbackValue=00:00}" ComparisonCondition="NotEqual">
+                <Core:ChangePropertyAction PropertyName="Visibility" TargetObject="{Binding ElementName=seperatorTextBlock}">
+                    <Core:ChangePropertyAction.Value>
+                        <Visibility>Visible</Visibility>
+                    </Core:ChangePropertyAction.Value>
+                </Core:ChangePropertyAction>
+                <Core:ChangePropertyAction PropertyName="Visibility" TargetObject="{Binding ElementName=tillTextBlock}">
+                    <Core:ChangePropertyAction.Value>
+                        <Visibility>Visible</Visibility>
+                    </Core:ChangePropertyAction.Value>
+                </Core:ChangePropertyAction>
+            </Core:DataTriggerBehavior>
+        </Interactivity:Interaction.Behaviors>
+        <TextBlock Text="{Binding From, ElementName=uc, FallbackValue=00:00}" Style="{StaticResource AlarmListWhenStyle}"/>
+        <TextBlock x:Name="seperatorTextBlock" Text="bis" Margin="3,0" Style="{StaticResource AlarmListWhenStyle}">
+        </TextBlock>
+        <TextBlock x:Name="tillTextBlock" Text="{Binding Till, ElementName=uc, FallbackValue=00:00}" Style="{StaticResource AlarmListWhenStyle}"/>
+    </StackPanel>
+</UserControl>
