@@ -35,17 +35,13 @@
                 <VisualState x:Name="InDelayedTrain"/>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-
-        <!--<ScrollViewer.TopHeader>
-                  Height="{Binding Path=ScrollableHeight, Mode=OneWay, Converter={StaticResource ScrollModeConverter}, RelativeSource={RelativeSource Mode=Self}}"
-            </ScrollViewer.TopHeader>-->
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
             <Button Background="{x:Null}" Padding="0" HorizontalAlignment="Stretch">
-                <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="0">
+                <FlipView x:Name="flipView" HorizontalAlignment="Left" SelectedIndex="2">
                     <FlipView.Items>
                         <RelativePanel Padding="10" Background="#FF46FF00">
                             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
@@ -59,19 +55,29 @@
                             <TextBlock x:Name="timeTextBlock2" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Margin="10,0"/>
                             <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
                             <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
+                            <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Keine Alternativverbindung gefunden" FontSize="22"/>
                         </RelativePanel>
                         <RelativePanel Padding="10" Background="Red">
                             <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
                             <TextBlock x:Name="statusTextBlock3" RelativePanel.Below="textBlock3" Text="Auweia!" FontSize="28" Margin="0,10"/>
-                            <TextBlock x:Name="routeTextBlock3" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
-                            <TextBlock x:Name="timeTextBlock3" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock3"/>
-                            <TextBlock x:Name="AAA" Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Margin="10,0"/>
-                            <Rectangle HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="47" RelativePanel.AlignVerticalCenterWith="timeTextBlock3" RelativePanel.RightOf="timeTextBlock3" Fill="White" Stroke="White" Margin="-42.333,-1.333,0,0" RenderTransformOrigin="0.5,0.5">
+                            <TextBlock x:Name="routeTextBlock3" Text="Karlsruhe 6:54 → Walldorf" FontSize="22" RelativePanel.Below="statusTextBlock3"/>
+                            <TextBlock x:Name="timeTextBlock3" Text="7:27" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Margin="10,0"/>
+                            <TextBlock Text="7:55" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="timeTextBlock3"/>
+                            <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Fill="White" Stroke="White"/>
+                            <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Jetzt umsteigen!" FontSize="22"/>
+                        </RelativePanel>
+                        <RelativePanel Padding="10" Background="Red">
+                            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
+                            <TextBlock x:Name="statusTextBlock5" RelativePanel.Below="textBlock5" Text="Auweia!" FontSize="28" Margin="0,10"/>
+                            <TextBlock x:Name="routeTextBlock5" Text="Karlsruhe 6:54" FontSize="22" RelativePanel.Below="statusTextBlock5"/>
+                            <TextBlock x:Name="timeTextBlock5" Text=" → Walldorf 7:27" FontSize="22" RelativePanel.Below="routeTextBlock5"/>
+                            <TextBlock x:Name="AAAA" Text="7:54" FontSize="22" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Margin="10,0"/>
+                            <Rectangle HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="47" RelativePanel.AlignVerticalCenterWith="timeTextBlock5" RelativePanel.RightOf="timeTextBlock5" Fill="White" Stroke="White" Margin="-42.333,-1.333,0,0" RenderTransformOrigin="0.5,0.5">
                                 <Rectangle.RenderTransform>
                                     <CompositeTransform ScaleY="-1"/>
                                 </Rectangle.RenderTransform>
                             </Rectangle>
-                            <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock3"></Image>
+                            <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock5"></Image>
                         </RelativePanel>
                         <RelativePanel Padding="10" Background="Black">
                             <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="White"/>
