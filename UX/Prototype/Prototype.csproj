@@ -142,11 +142,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="SampleData\SampleConnections\SampleConnections_Files\image01.png" />
-    <Content Include="SampleData\SampleConnections\SampleConnections_Files\image02.png" />
-    <Content Include="SampleData\SampleConnections\SampleConnections_Files\image03.png" />
-    <Content Include="SampleData\SampleConnections\SampleConnections_Files\image04.png" />
-    <Content Include="SampleData\SampleConnections\SampleConnections_Files\image05.png" />
     <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
     <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png" />
     <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
@@ -197,6 +192,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SampleData\SampleConnections\SampleConnections_Files\" />
     <Folder Include="Themes\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
