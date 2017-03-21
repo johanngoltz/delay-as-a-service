@@ -21,10 +21,9 @@
             </RowDefinition>
         </Grid.RowDefinitions>
 
-        <Canvas Background="#FF7A6E6E" Opacity="0.8" Margin="0">
-            <Image Source="Assets/plan.png" Width="429" Height="484" />
+        <Canvas x:Name="canvas" Background="#bcb5b5">
+            <Image x:Name="image" Source="Assets/plan.png" Height="{Binding ActualHeight, ElementName=canvas, Mode=OneWay}" Width="{Binding ActualWidth, ElementName=canvas, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Canvas>
-        <!--TextBox Text="Fahrplanübersicht" HorizontalAlignment="Center" VerticalAlignment="Center" ></-->
 
 
         <Grid Grid.Row="1" Margin="10">
