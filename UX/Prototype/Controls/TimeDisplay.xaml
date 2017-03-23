@@ -8,7 +8,7 @@
     x:Class="Prototype.Controls.TimeDisplay"
     mc:Ignorable="d"
     d:DesignHeight="20"
-    d:DesignWidth="400"
+    d:DesignWidth="200"
     x:Name="uc">
 
     <StackPanel Orientation="Horizontal">
