@@ -128,38 +128,21 @@
                         </CommandBar>
                     </Grid>
                 </PivotItem>
-                <PivotItem>
-                    <PivotItem.Header>Tickets</PivotItem.Header>
-                    <ListView DataContext="{Binding Tickets}">
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <!-- von nach -->
-                                <TextBlock Text="Karlsruhe"/>
-                                <TextBlock Text="→"/>
-                                <TextBlock Text="Walldorf"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <!-- Uhrzeit -->
-                                <TextBlock Text="Gestern 7:02 - 7:34"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </ListView>
+                <PivotItem Header="Tickets" Margin="0">
+                    <ListView DataContext="{Binding Tickets}" ItemTemplate="{StaticResource TicketListItemTemplate}" ItemsSource="{Binding}"/>
                 </PivotItem>
-                <PivotItem Header="Feedback">
-                    <ListView DataContext="{Binding Tickets}">
-                        <StackPanel>
+                <PivotItem Header="Feedback" Margin="0">
+                    <ListView DataContext="{Binding Feedback}" ItemTemplate="{StaticResource FeedbackListItemTemplate}" ItemsSource="{Binding}"/>
+                    <!--<StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <!-- von nach -->
                                 <TextBlock Text="Walldorf"/>
                                 <TextBlock Text="→"/>
                                 <TextBlock Text="Karsruhe"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <!-- Uhrzeit -->
                                 <TextBlock Text="Vorgestern 16:58 - 17:34"/>
                             </StackPanel>
-                        </StackPanel>
-                    </ListView>
+                        </StackPanel>-->
                 </PivotItem>
             </Pivot>
         </Grid>
