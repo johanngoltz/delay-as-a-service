@@ -55,6 +55,16 @@ namespace Blend.SampleData.SampleDataSource
                 return this._Tickets;
             }
         }
+
+        private Feedback _Feedback = new Feedback();
+
+        public Feedback Feedback
+        {
+            get
+            {
+                return this._Feedback;
+            }
+        }
     }
 
     public class Alarms : System.Collections.ObjectModel.ObservableCollection<AlarmsItem>
@@ -437,6 +447,177 @@ namespace Blend.SampleData.SampleDataSource
 
     public class Stops1 : System.Collections.ObjectModel.ObservableCollection<StopsItem1>
     { 
+    }
+
+    public class FeedbackItem : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private Stops2 _Stops = new Stops2();
+
+        public Stops2 Stops
+        {
+            get
+            {
+                return this._Stops;
+            }
+        }
+
+        private Time1 _Time = new Time1();
+
+        public Time1 Time
+        {
+            get
+            {
+                return this._Time;
+            }
+
+            set
+            {
+                if (this._Time != value)
+                {
+                    this._Time = value;
+                    this.OnPropertyChanged("Time");
+                }
+            }
+        }
+    }
+
+    public class Feedback : System.Collections.ObjectModel.ObservableCollection<FeedbackItem>
+    { 
+    }
+
+    public class StopsItem2 : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private string _Name = string.Empty;
+
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+
+            set
+            {
+                if (this._Name != value)
+                {
+                    this._Name = value;
+                    this.OnPropertyChanged("Name");
+                }
+            }
+        }
+
+        private string _WaypointType = string.Empty;
+
+        public string WaypointType
+        {
+            get
+            {
+                return this._WaypointType;
+            }
+
+            set
+            {
+                if (this._WaypointType != value)
+                {
+                    this._WaypointType = value;
+                    this.OnPropertyChanged("WaypointType");
+                }
+            }
+        }
+    }
+
+    public class Stops2 : System.Collections.ObjectModel.ObservableCollection<StopsItem2>
+    { 
+    }
+
+    public class Time1 : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private string _Departure = string.Empty;
+
+        public string Departure
+        {
+            get
+            {
+                return this._Departure;
+            }
+
+            set
+            {
+                if (this._Departure != value)
+                {
+                    this._Departure = value;
+                    this.OnPropertyChanged("Departure");
+                }
+            }
+        }
+
+        private string _Arrival = string.Empty;
+
+        public string Arrival
+        {
+            get
+            {
+                return this._Arrival;
+            }
+
+            set
+            {
+                if (this._Arrival != value)
+                {
+                    this._Arrival = value;
+                    this.OnPropertyChanged("Arrival");
+                }
+            }
+        }
+
+        private string _Date = string.Empty;
+
+        public string Date
+        {
+            get
+            {
+                return this._Date;
+            }
+
+            set
+            {
+                if (this._Date != value)
+                {
+                    this._Date = value;
+                    this.OnPropertyChanged("Date");
+                }
+            }
+        }
     }
 #endif
 }

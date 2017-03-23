@@ -63,18 +63,61 @@
         <SampleData:StopsItem1 Name="Bruchsal" WaypointType="Start" />
         <SampleData:StopsItem1 Name="Walldorf" WaypointType="Destination" />
       </SampleData:TicketsItem.Stops>
-            <SampleData:TicketsItem.Date>
-                21.3.
-            </SampleData:TicketsItem.Date>
+            <SampleData:TicketsItem.Date>21.3.</SampleData:TicketsItem.Date>
         </SampleData:TicketsItem>
         <SampleData:TicketsItem>
             <SampleData:TicketsItem.Stops>
                 <SampleData:StopsItem1 Name="Walldorf" WaypointType="Start" />
                 <SampleData:StopsItem1 Name="Karlsruhe" WaypointType="Destination" />
             </SampleData:TicketsItem.Stops>
-            <SampleData:TicketsItem.Date>
-                4.3.
-            </SampleData:TicketsItem.Date>
+            <SampleData:TicketsItem.Date>4.3.</SampleData:TicketsItem.Date>
         </SampleData:TicketsItem>
     </SampleData:SampleDataSource.Tickets>
+    <SampleData:SampleDataSource.Feedback>
+        <SampleData:FeedbackItem>
+            <SampleData:FeedbackItem.Stops>
+                <SampleData:StopsItem2 Name="Karlsruhe" WaypointType="Start"/>
+                <SampleData:StopsItem2 Name="Walldorf" WaypointType="Destination"/>
+            </SampleData:FeedbackItem.Stops>
+            <SampleData:FeedbackItem.Time>
+                <SampleData:Time1 Date="Heute" Departure="6:54" Arrival="7:29"/>
+            </SampleData:FeedbackItem.Time>
+        </SampleData:FeedbackItem>
+        <SampleData:FeedbackItem>
+            <SampleData:FeedbackItem.Stops>
+                <SampleData:StopsItem2 Name="Walldorf" WaypointType="Start"/>
+                <SampleData:StopsItem2 Name="Karlsruhe" WaypointType="Destination"/>
+            </SampleData:FeedbackItem.Stops>
+            <SampleData:FeedbackItem.Time>
+                <SampleData:Time1 Date="Gestern" Departure="16:12" Arrival="16:42"/>
+            </SampleData:FeedbackItem.Time>
+        </SampleData:FeedbackItem>
+        <SampleData:FeedbackItem>
+            <SampleData:FeedbackItem.Stops>
+                <SampleData:StopsItem2 Name="Karlsruhe" WaypointType="Start"/>
+                <SampleData:StopsItem2 Name="Walldorf" WaypointType="Destination"/>
+            </SampleData:FeedbackItem.Stops>
+            <SampleData:FeedbackItem.Time>
+                <SampleData:Time1 Date="Gestern" Departure="6:45" Arrival="7:20"/>
+            </SampleData:FeedbackItem.Time>
+        </SampleData:FeedbackItem>
+        <SampleData:FeedbackItem>
+            <SampleData:FeedbackItem.Stops>
+                <SampleData:StopsItem2 Name="Walldorf" WaypointType="Start"/>
+                <SampleData:StopsItem2 Name="Karlsruhe" WaypointType="Destination"/>
+            </SampleData:FeedbackItem.Stops>
+            <SampleData:FeedbackItem.Time>
+                <SampleData:Time1 Date="Vorgestern" Departure="16:58" Arrival="17:33"/>
+            </SampleData:FeedbackItem.Time>
+        </SampleData:FeedbackItem>
+        <SampleData:FeedbackItem>
+            <SampleData:FeedbackItem.Stops>
+                <SampleData:StopsItem2 Name="Karlsruhe" WaypointType="Start"/>
+                <SampleData:StopsItem2 Name="Walldorf" WaypointType="Destination"/>
+            </SampleData:FeedbackItem.Stops>
+            <SampleData:FeedbackItem.Time>
+                <SampleData:Time1 Date="Vorgestern" Departure="6:45" Arrival="7:20"/>
+            </SampleData:FeedbackItem.Time>
+        </SampleData:FeedbackItem>
+    </SampleData:SampleDataSource.Feedback>
 </SampleData:SampleDataSource>
