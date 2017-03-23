@@ -9,14 +9,8 @@
     x:Class="Prototype.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
-        <local:WaypointTypeConverter x:Key="WaypointTypeConverter"/>
         <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
     </Page.Resources>
-    <!--
-    <Page.BottomAppBar>
-        
-    </Page.BottomAppBar>-->
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource SampleDataSource}}">
         <Grid>
             <Grid.RowDefinitions>
@@ -133,16 +127,6 @@
                 </PivotItem>
                 <PivotItem Header="Feedback" Margin="0">
                     <ListView DataContext="{Binding Feedback}" ItemTemplate="{StaticResource FeedbackListItemTemplate}" ItemsSource="{Binding}"/>
-                    <!--<StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Walldorf"/>
-                                <TextBlock Text="→"/>
-                                <TextBlock Text="Karsruhe"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Vorgestern 16:58 - 17:34"/>
-                            </StackPanel>
-                        </StackPanel>-->
                 </PivotItem>
             </Pivot>
         </Grid>
