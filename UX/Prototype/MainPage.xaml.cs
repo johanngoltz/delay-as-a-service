@@ -45,5 +45,13 @@ namespace Prototype
                 rootFrame.GoBack();
             }
         }
+
+        private void pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if ((sender as Pivot).SelectedIndex == 0)
+                commandBar.Visibility = Visibility.Visible;
+            else
+                commandBar.Visibility = Visibility.Collapsed;
+        }
     }
 }
