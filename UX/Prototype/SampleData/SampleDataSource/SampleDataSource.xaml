@@ -3,64 +3,78 @@
       Diese Datei wurde von einem Designwerkzeug erstellt. Änderungen
       dieser Datei können Fehler verursachen.
 -->
-<SampleDataSource:SampleDataSource xmlns:SampleDataSource="using:Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-    <SampleDataSource:SampleDataSource.Alarms>
-        <SampleDataSource:AlarmsItem>
-            <SampleDataSource:AlarmsItem.Route>
-                <SampleDataSource:Route BeginStation="Cras" EndStation="Maecenas" />
-            </SampleDataSource:AlarmsItem.Route>
-            <SampleDataSource:AlarmsItem.Time>
-                <SampleDataSource:Time>
-                    <SampleDataSource:Time.Interval>
-                        <SampleDataSource:Interval>
-                            <SampleDataSource:Interval.Days>
-                                <SampleDataSource:DaysItem Abbreviaton="Sa" />
-                            </SampleDataSource:Interval.Days>
-                        </SampleDataSource:Interval>
-                    </SampleDataSource:Time.Interval>
-                    <SampleDataSource:Time.Departure>
-                        <SampleDataSource:TimeRange Earliest="8:05" Latest="8:05" />
-                    </SampleDataSource:Time.Departure>
-                    <SampleDataSource:Time.Arrival>
-                        <SampleDataSource:TimeRange Earliest="7:13:04 AM" Latest="7:13:04 AM" />
-                    </SampleDataSource:Time.Arrival>
-                </SampleDataSource:Time>
-            </SampleDataSource:AlarmsItem.Time>
-            <SampleDataSource:AlarmsItem.Stops>
-                <SampleDataSource:StopsItem Name="Hauptbahnhof" WaypointType="Start" />
-                <SampleDataSource:StopsItem Name="Europaplatz" WaypointType="Changeover" />
-                <SampleDataSource:StopsItem Name="Hochstetten" WaypointType="Destination" />
-            </SampleDataSource:AlarmsItem.Stops>
-        </SampleDataSource:AlarmsItem>
-        <SampleDataSource:AlarmsItem>
-            <SampleDataSource:AlarmsItem.Route>
-                <SampleDataSource:Route BeginStation="Nam" EndStation="Nam" />
-            </SampleDataSource:AlarmsItem.Route>
-            <SampleDataSource:AlarmsItem.Time>
-                <SampleDataSource:Time>
-                    <SampleDataSource:Time.Interval>
-                        <SampleDataSource:Interval>
-                            <SampleDataSource:Interval.Days>
-                                <SampleDataSource:DaysItem Abbreviaton="Mo" />
-                                <SampleDataSource:DaysItem Abbreviaton="Di" />
-                                <SampleDataSource:DaysItem Abbreviaton="Mi" />
-                                <SampleDataSource:DaysItem Abbreviaton="Do" />
-                                <SampleDataSource:DaysItem Abbreviaton="Fr" />
-                            </SampleDataSource:Interval.Days>
-                        </SampleDataSource:Interval>
-                    </SampleDataSource:Time.Interval>
-                    <SampleDataSource:Time.Departure>
-                        <SampleDataSource:TimeRange Earliest="6:45" Latest="8:30" />
-                    </SampleDataSource:Time.Departure>
-                    <SampleDataSource:Time.Arrival>
-                        <SampleDataSource:TimeRange Earliest="7:06:05 AM" Latest="7:06:05 AM" />
-                    </SampleDataSource:Time.Arrival>
-                </SampleDataSource:Time>
-            </SampleDataSource:AlarmsItem.Time>
-            <SampleDataSource:AlarmsItem.Stops>
-                <SampleDataSource:StopsItem Name="Karlsruhe" WaypointType="Start" />
-                <SampleDataSource:StopsItem Name="Walldorf" WaypointType="Destination" />
-            </SampleDataSource:AlarmsItem.Stops>
-        </SampleDataSource:AlarmsItem>
-    </SampleDataSource:SampleDataSource.Alarms>
-</SampleDataSource:SampleDataSource>
+<SampleData:SampleDataSource xmlns:SampleData="using:Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:SampleDataSource.Alarms>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Abbreviaton="Sa" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:TimeRange Earliest="8:05" Latest="8:05" />
+          </SampleData:Time.Departure>
+          <SampleData:Time.Arrival>
+            <SampleData:TimeRange Earliest="7:13:04 AM" Latest="7:13:04 AM" />
+          </SampleData:Time.Arrival>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+      <SampleData:AlarmsItem.Stops>
+        <SampleData:StopsItem Name="Hauptbahnhof" WaypointType="Start" />
+        <SampleData:StopsItem Name="Europaplatz" WaypointType="Changeover" />
+        <SampleData:StopsItem Name="Hochstetten" WaypointType="Destination" />
+      </SampleData:AlarmsItem.Stops>
+    </SampleData:AlarmsItem>
+    <SampleData:AlarmsItem>
+      <SampleData:AlarmsItem.Time>
+        <SampleData:Time>
+          <SampleData:Time.Interval>
+            <SampleData:Interval>
+              <SampleData:Interval.Days>
+                <SampleData:DaysItem Abbreviaton="Mo" />
+                <SampleData:DaysItem Abbreviaton="Di" />
+                <SampleData:DaysItem Abbreviaton="Mi" />
+                <SampleData:DaysItem Abbreviaton="Do" />
+                <SampleData:DaysItem Abbreviaton="Fr" />
+              </SampleData:Interval.Days>
+            </SampleData:Interval>
+          </SampleData:Time.Interval>
+          <SampleData:Time.Departure>
+            <SampleData:TimeRange Earliest="6:45" Latest="8:30" />
+          </SampleData:Time.Departure>
+          <SampleData:Time.Arrival>
+            <SampleData:TimeRange Earliest="7:06:05 AM" Latest="7:06:05 AM" />
+          </SampleData:Time.Arrival>
+        </SampleData:Time>
+      </SampleData:AlarmsItem.Time>
+      <SampleData:AlarmsItem.Stops>
+        <SampleData:StopsItem Name="Karlsruhe" WaypointType="Start" />
+        <SampleData:StopsItem Name="Walldorf" WaypointType="Destination" />
+      </SampleData:AlarmsItem.Stops>
+    </SampleData:AlarmsItem>
+  </SampleData:SampleDataSource.Alarms>
+  <SampleData:SampleDataSource.Tickets>
+    <SampleData:TicketsItem>
+      <SampleData:TicketsItem.Stops>
+        <SampleData:StopsItem1 Name="Bruchsal" WaypointType="Start" />
+        <SampleData:StopsItem1 Name="Walldorf" WaypointType="Destination" />
+      </SampleData:TicketsItem.Stops>
+            <SampleData:TicketsItem.Date>
+                21.3.
+            </SampleData:TicketsItem.Date>
+        </SampleData:TicketsItem>
+        <SampleData:TicketsItem>
+            <SampleData:TicketsItem.Stops>
+                <SampleData:StopsItem1 Name="Walldorf" WaypointType="Start" />
+                <SampleData:StopsItem1 Name="Karlsruhe" WaypointType="Destination" />
+            </SampleData:TicketsItem.Stops>
+            <SampleData:TicketsItem.Date>
+                4.3.
+            </SampleData:TicketsItem.Date>
+        </SampleData:TicketsItem>
+    </SampleData:SampleDataSource.Tickets>
+</SampleData:SampleDataSource>

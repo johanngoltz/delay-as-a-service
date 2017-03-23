@@ -9,6 +9,7 @@
   <xs:complexType name="SampleDataSource">
     <xs:sequence>
       <xs:element name="Alarms" type="tns:Alarms" />
+      <xs:element name="Tickets" type="tns:Tickets" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Alarms">
@@ -18,14 +19,9 @@
   </xs:complexType>
   <xs:complexType name="AlarmsItem">
     <xs:sequence>
-      <xs:element name="Route" type="tns:Route" />
       <xs:element name="Time" type="tns:Time" />
       <xs:element name="Stops" type="tns:Stops" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Route">
-    <xs:attribute blend:FormatParameters="1,8" name="BeginStation" type="xs:string" />
-    <xs:attribute blend:FormatParameters="1,8" name="EndStation" type="xs:string" />
   </xs:complexType>
   <xs:complexType name="Time">
     <xs:sequence>
@@ -58,6 +54,26 @@
   </xs:complexType>
   <xs:complexType name="StopsItem">
     <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="WaypointType" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Tickets">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="TicketsItem" type="tns:TicketsItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TicketsItem">
+    <xs:sequence>
+      <xs:element name="Stops" type="tns:Stops1" />
+    </xs:sequence>
+    <xs:attribute blend:Format="Datum" name="Date" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Stops1">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="StopsItem1" type="tns:StopsItem1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StopsItem1">
+    <xs:attribute name="Name" type="xs:string" blend:Format="" />
     <xs:attribute name="WaypointType" type="xs:string" />
   </xs:complexType>
 </xs:schema>
