@@ -21,8 +21,9 @@
                 <FlipView.Items>
                     <RelativePanel Padding="10" Background="#FF46FF00">
                         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
-                        <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
-                        <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
+                            <TextBlock x:Name="statusTextBlock" RelativePanel.Below="textBlock" Text="Alles OK!" FontSize="28" Margin="0,10"/>
+                            <TextBlock Text="Karlsruhe 6:54 → Walldorf 7:27" FontSize="22" RelativePanel.Below="statusTextBlock"/>
+                        <Image Source="Assets/pfeilrechts.png" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Width="100"></Image>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Red">
                         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
@@ -32,6 +33,7 @@
                         <TextBlock Text="7:45" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="timeTextBlock2"/>
                         <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock2" RelativePanel.RightOf="routeTextBlock2" Fill="White" Stroke="White"/>
                         <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Keine Alternativverbindung gefunden" FontSize="22"/>
+                        <Image Source="Assets/pfeilrechts.png" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Width="100"></Image>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Red">
                         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
@@ -41,6 +43,7 @@
                         <TextBlock Text="7:55" FontSize="22" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="timeTextBlock3"/>
                         <Rectangle HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="50" RelativePanel.AlignVerticalCenterWith="routeTextBlock3" RelativePanel.RightOf="routeTextBlock3" Fill="White" Stroke="White"/>
                         <TextBlock RelativePanel.AlignBottomWithPanel="True" Text="Jetzt umsteigen!" FontSize="22"/>
+                        <Image Source="Assets/pfeilrechts.png" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Width="100"></Image>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Red">
                         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Aktuelle Fahrt:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10"/>
@@ -54,6 +57,7 @@
                             </Rectangle.RenderTransform>
                         </Rectangle>
                         <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock5"></Image>
+                        <Image Source="Assets/pfeilrechts.png" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Width="100"></Image>
                     </RelativePanel>
                     <RelativePanel Padding="10" Background="Black">
                         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="White"/>

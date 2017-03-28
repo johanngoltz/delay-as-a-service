@@ -135,6 +135,7 @@
     <None Include="Prototype_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\pfeilrechts.png" />
     <Content Include="Assets\plan.png" />
     <Content Include="Assets\QR-Code_Willkommen_bei_Wikipedia.png" />
     <Content Include="Properties\Default.rd.xml" />
