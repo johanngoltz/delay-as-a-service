@@ -106,6 +106,9 @@
     <Compile Include="Controls\TimeDisplay.xaml.cs">
       <DependentUpon>TimeDisplay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\WeekdaySelector.xaml.cs">
+      <DependentUpon>WeekdaySelector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateAlarmPage.xaml.cs">
       <DependentUpon>CreateAlarmPage.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\WeekdaySelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateAlarmPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -199,8 +206,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Converters\Themes\" />
     <Folder Include="SampleData\SampleConnections\SampleConnections_Files\" />
-    <Folder Include="Themes\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
