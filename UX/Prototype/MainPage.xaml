@@ -103,7 +103,7 @@
                             <RowDefinition/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <ListView ItemsSource="{Binding Alarms}" HorizontalContentAlignment="Stretch" ItemTemplate="{StaticResource AlarmListItemTemplate}" Margin="12,0">
+                        <ListView ItemsSource="{Binding Alarms}" HorizontalContentAlignment="Stretch" ItemTemplate="{StaticResource AlarmListItemTemplate}" Margin="12,0" IsItemClickEnabled="True" ItemClick="Alarms_PointerPressed">
                             <ListView.ItemContainerStyle>
                                 <Style TargetType="ListViewItem">
                                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -123,10 +123,10 @@
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Tickets" Margin="0">
-                    <ListView DataContext="{Binding Tickets}" ItemTemplate="{StaticResource TicketListItemTemplate}" ItemsSource="{Binding}"/>
+                    <ListView DataContext="{Binding Tickets}" ItemTemplate="{StaticResource TicketListItemTemplate}" ItemsSource="{Binding}" ItemClick="Tickets_PointerPressed" IsItemClickEnabled="True"/>
                 </PivotItem>
                 <PivotItem Header="Feedback" Margin="0">
-                    <ListView DataContext="{Binding Feedback}" ItemTemplate="{StaticResource FeedbackListItemTemplate}" ItemsSource="{Binding}"/>
+                    <ListView DataContext="{Binding Feedback}" ItemTemplate="{StaticResource FeedbackListItemTemplate}" ItemsSource="{Binding}" ItemClick="Feedback_PointerPressed" IsItemClickEnabled="True"/>
                 </PivotItem>
             </Pivot>
         </Grid>
