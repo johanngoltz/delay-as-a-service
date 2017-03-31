@@ -59,7 +59,7 @@
                         <Image Source="Assets/QR-Code_Willkommen_bei_Wikipedia.png" RelativePanel.RightOf="AAAA" RelativePanel.AlignVerticalCenterWith="routeTextBlock5"></Image>
                         <Image Source="Assets/pfeilrechts.png" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Width="100"></Image>
                     </RelativePanel>
-                    <RelativePanel Padding="10" Background="Black">
+                    <RelativePanel Padding="10" Background="Transparent">
                         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Nächste Fahrten:" VerticalAlignment="Top" FontSize="22" Margin="0,0,0,10" Foreground="White"/>
                         <Grid RelativePanel.Below="textBlock4" Margin="0,5" >
                             <Grid.ColumnDefinitions>
