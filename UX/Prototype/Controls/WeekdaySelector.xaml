@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="Prototype.Controls.WeekdaySelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Prototype.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="42"
+    d:DesignWidth="330">
+    <UserControl.Resources>
+        <Style TargetType="ToggleButton">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="IsChecked" Value="True"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ToggleButton Content="Mo" Grid.Column="0" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Di" Grid.Column="1" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Mi" Grid.Column="2" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Do" Grid.Column="3" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Fr" Grid.Column="4" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Sa" Grid.Column="5" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="So" Grid.Column="6" Unchecked="ToggleButton_Unchecked"/>
+    </Grid>
+</UserControl>

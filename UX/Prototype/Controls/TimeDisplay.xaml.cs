@@ -24,8 +24,9 @@ namespace Prototype.Controls
             this.InitializeComponent();
         }
 
-        public static readonly DependencyProperty FromProperty = DependencyProperty.Register("From", typeof(string), typeof(TimeDisplay), PropertyMetadata.Create("00:00"));
-        public static readonly DependencyProperty TillProperty = DependencyProperty.Register("Till", typeof(string), typeof(TimeDisplay), PropertyMetadata.Create("00:00"));
+        private static PropertyChangedCallback onTimeChangedCallback = new PropertyChangedCallback(OnTimeChanged);
+        public static readonly DependencyProperty FromProperty = DependencyProperty.Register("From", typeof(string), typeof(TimeDisplay), PropertyMetadata.Create("00:00", onTimeChangedCallback));
+        public static readonly DependencyProperty TillProperty = DependencyProperty.Register("Till", typeof(string), typeof(TimeDisplay), PropertyMetadata.Create("00:00", onTimeChangedCallback));
 
         public string From
         {
@@ -37,6 +38,16 @@ namespace Prototype.Controls
         {
             get { return (string)GetValue(TillProperty); }
             set { SetValue(TillProperty, value); }
+        }
+
+        private static void OnTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            (d as TimeDisplay).setDisplayRange(!d.GetValue(FromProperty).Equals(d.GetValue(TillProperty)));
+        }
+
+        private void setDisplayRange(bool showRange)
+        {
+            seperatorTextBlock.Visibility = tillTextBlock.Visibility = showRange ? Visibility.Visible : Visibility.Collapsed;            
         }
     }
 }
