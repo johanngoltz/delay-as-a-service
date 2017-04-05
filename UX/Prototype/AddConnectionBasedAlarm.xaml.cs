@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blend.SampleData.SampleDataSource;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,7 +25,17 @@ namespace Prototype
     {
         public AddConnectionBasedAlarm()
         {
+            AlarmsItem newAlarm = new AlarmsItem();
+
+            foreach (var item in new string[] { "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" }.Select(abbreviation => new DaysItem() { Abbreviaton = abbreviation }))
+                newAlarm.Time.Interval.Days.Add(item);
+            foreach (var item in new string[] { "Start", "Changeover", "Destination" }.Select(type => new StopsItem { WaypointType = type }))
+                newAlarm.Stops.Add(item);
+
             this.InitializeComponent();
+
+            SampleDataSource.Alarms.Clear();
+            SampleDataSource.Alarms.Insert(0, newAlarm);
         }
     }
 }
