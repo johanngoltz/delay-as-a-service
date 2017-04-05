@@ -26,15 +26,28 @@ namespace Prototype
         public AddTimeBasedAlarm()
         {
             AlarmsItem newAlarm = new AlarmsItem();
-            
+
             foreach (var item in new string[] { "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" }.Select(abbreviation => new DaysItem() { Abbreviaton = abbreviation }))
                 newAlarm.Time.Interval.Days.Add(item);
             foreach (var item in new string[] { "Start", "Changeover", "Destination" }.Select(type => new StopsItem { WaypointType = type }))
                 newAlarm.Stops.Add(item);
 
             this.InitializeComponent();
+
+            SampleDataSource.Alarms.Clear();
             SampleDataSource.Alarms.Insert(0, newAlarm);
+
         }
+
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        {
+            base.OnNavigatingFrom(e);
+
+            foreach (var alarm in SampleDataSource.Alarms)
+                foreach (var emptyStop in alarm.Stops.Where(stop => stop.Name.Length == 0))
+                    alarm.Stops.Remove(emptyStop);
+        }
+
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);

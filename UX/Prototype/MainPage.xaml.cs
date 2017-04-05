@@ -32,6 +32,13 @@ namespace Prototype
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = Windows.UI.Core.AppViewBackButtonVisibility.Visible;
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (e.Parameter as Blend.SampleData.SampleDataSource.AlarmsItem != null)
+                SampleData.Alarms.Insert(0, e.Parameter as Blend.SampleData.SampleDataSource.AlarmsItem);
+        }
+
         private void MainPage_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
