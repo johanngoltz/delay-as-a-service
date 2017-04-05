@@ -25,7 +25,7 @@
             <Grid Width="360">
                 <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="10,330,0,0" TextWrapping="Wrap" Text="Beginn" VerticalAlignment="Top" Width="98" FontSize="18"/>
                 <TimePicker HorizontalAlignment="Left" Margin="108,329,0,0" VerticalAlignment="Top" Time="{Binding Time.Departure.Earliest, Converter={StaticResource StringTimeConverter}, Mode=TwoWay}"/>
-                <TimePicker HorizontalAlignment="Left" Margin="108,366,0,0" VerticalAlignment="Top" Time="{Binding Time.Arrival.Latest, Converter={StaticResource StringTimeConverter}, Mode=TwoWay}"/>
+                <TimePicker HorizontalAlignment="Left" Margin="108,366,0,0" VerticalAlignment="Top" Time="{Binding Time.Departure.Latest, Converter={StaticResource StringTimeConverter}, Mode=TwoWay}"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" FontSize="18" Text="Ende"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,391,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
                 <TextBlock Grid.Row="3" HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>
@@ -44,7 +44,7 @@
                 <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,521,0,0" VerticalAlignment="Top" Width="46"/>
                 <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,552,0,0" VerticalAlignment="Top" Width="46"/>
                 <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46" IsChecked="True"/>
-
+                <customControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}"/>
                 <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top" x:Name="addTimeAlarmButton">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
@@ -54,13 +54,12 @@
                         <Interactivity:Interaction.Behaviors>
                             <Core:EventTriggerBehavior EventName="Click" SourceObject="{Binding ElementName=addTimeAlarmButton}">
                                 <Core:EventTriggerBehavior.Actions>
-                                    <Core:NavigateToPageAction TargetPage="Prototype.MainPage" />
+                                    <Core:NavigateToPageAction TargetPage="Prototype.MainPage" Parameter="{Binding}"/>
                                 </Core:EventTriggerBehavior.Actions>
                             </Core:EventTriggerBehavior>
                         </Interactivity:Interaction.Behaviors>
                     </StackPanel>
                 </Button>
-                <customControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}"/>
             </Grid>
         </ScrollViewer>
 
