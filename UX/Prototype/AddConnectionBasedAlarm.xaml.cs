@@ -37,5 +37,14 @@ namespace Prototype
             SampleDataSource.Alarms.Clear();
             SampleDataSource.Alarms.Insert(0, newAlarm);
         }
+
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        {
+            base.OnNavigatingFrom(e);
+
+            foreach (var alarm in SampleDataSource.Alarms)
+                foreach (var emptyStop in alarm.Stops.Where(stop => stop.Name.Length == 0))
+                    alarm.Stops.Remove(emptyStop);
+        }
     }
 }
