@@ -113,6 +113,7 @@
     <Compile Include="Controls\WeekdaySelector.xaml.cs">
       <DependentUpon>WeekdaySelector.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\StringTimeConverter.cs" />
     <Compile Include="CreateAlarmPage.xaml.cs">
       <DependentUpon>CreateAlarmPage.xaml</DependentUpon>
     </Compile>
@@ -132,7 +133,6 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\WaypointTypeConverter.cs" />
     <Compile Include="Selectors\WordListItemTemplateSelector.cs" />
   </ItemGroup>
   <ItemGroup>
