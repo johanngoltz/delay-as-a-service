@@ -44,8 +44,8 @@
                 <CalendarDatePicker HorizontalAlignment="Left" Margin="113,490,0,0" VerticalAlignment="Top" Width="237"/>
                 <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,521,0,0" VerticalAlignment="Top" Width="46"/>
                 <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,552,0,0" VerticalAlignment="Top" Width="46"/>
-                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46" IsChecked="True"/>
-                <CustomControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}"/>
+                <RadioButton x:Name="weeklyRadio" Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46" IsChecked="True"/>
+                <CustomControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}" IsEnabled="{Binding IsChecked, ElementName=weeklyRadio}"/>
                 <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top" x:Name="addTimeAlarmButton">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>

@@ -33,7 +33,7 @@ namespace Prototype
                 newAlarm.Stops.Add(item);
 
             this.InitializeComponent();
-
+            
             SampleDataSource.Alarms.Clear();
             SampleDataSource.Alarms.Insert(0, newAlarm);
 

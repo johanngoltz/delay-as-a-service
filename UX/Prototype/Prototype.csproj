@@ -246,7 +246,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Converters\Themes\" />
     <Folder Include="SampleData\SampleConnections\SampleConnections_Files\" />
   </ItemGroup>
   <ItemGroup>
