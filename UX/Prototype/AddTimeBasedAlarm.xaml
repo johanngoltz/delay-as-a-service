@@ -31,9 +31,9 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,391,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
                 <TextBlock Grid.Row="3" HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Von" VerticalAlignment="Top" Width="98"/>
                 <TextBlock Grid.Row="4" HorizontalAlignment="Left" Margin="10,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nach" Width="98"/>
-                <TextBox HorizontalAlignment="Left" Height="20" Margin="113,124,0,0" TextWrapping="Wrap" Text="{Binding Stops[0].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Starthaltestelle"/>
-                <TextBox HorizontalAlignment="Left" Height="20" Margin="113,161,0,0" TextWrapping="Wrap" Text="{Binding Stops[2].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Endhaltestelle"/>
-                <TextBox HorizontalAlignment="Left" Height="20" Margin="113,198,0,0" TextWrapping="Wrap" Text="{Binding Stops[1].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Zwischenhalt"/>
+                <TextBox x:Name="Stop0" HorizontalAlignment="Left" Height="20" Margin="113,124,0,0" TextWrapping="Wrap" Text="{Binding Stops[0].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Starthaltestelle"/>
+                <TextBox x:Name="Stop2" HorizontalAlignment="Left" Height="20" Margin="113,161,0,0" TextWrapping="Wrap" Text="{Binding Stops[2].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Endhaltestelle"/>
+                <TextBox x:Name="Stop1" HorizontalAlignment="Left" Height="20" Margin="113,198,0,0" TextWrapping="Wrap" Text="{Binding Stops[1].Name, Mode=TwoWay}" VerticalAlignment="Top" Width="237" PlaceholderText="Zwischenhalt"/>
                 <TextBlock Grid.Row="5" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Via" Width="98"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,218,0,0" TextWrapping="Wrap" Text="Optional" VerticalAlignment="Top" Foreground="#FF333333" FontSize="12"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,287,0,0" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="Wrap" Text="Zeitraum" VerticalAlignment="Top" Width="340" FontSize="20"/>

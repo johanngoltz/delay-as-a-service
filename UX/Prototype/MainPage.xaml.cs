@@ -35,9 +35,14 @@ namespace Prototype
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            if (e.Parameter as Blend.SampleData.SampleDataSource.AlarmsItem != null)
-                SampleData.Alarms.Insert(0, e.Parameter as Blend.SampleData.SampleDataSource.AlarmsItem);
-        }
+			var addedAlarm = (e.Parameter as Blend.SampleData.SampleDataSource.AlarmsItem);
+			if (addedAlarm != null)
+			{
+				foreach (var stop in addedAlarm.Stops.Where(stop => "" == stop.Name).ToArray())
+					addedAlarm.Stops.Remove(stop);
+				SampleData.Alarms.Insert(0, addedAlarm);
+			}
+		}
 
         private void MainPage_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {

@@ -110,6 +110,10 @@ namespace Blend.SampleData.SampleDataSource
             {
                 return this._Stops;
             }
+			set
+			{
+				this._Stops = value;
+			}
         }
     }
 
