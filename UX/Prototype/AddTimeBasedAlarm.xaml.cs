@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Blend.SampleData.SampleDataSource;
+using Windows.UI;
 
 // Die Elementvorlage "Leere Seite" ist unter http://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
 
@@ -33,39 +34,48 @@ namespace Prototype
                 newAlarm.Stops.Add(item);
 
             this.InitializeComponent();
-
-            SampleDataSource.Alarms.Clear();
-            SampleDataSource.Alarms.Insert(0, newAlarm);
-
         }
 
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
             base.OnNavigatingFrom(e);
 
-            foreach (var alarm in SampleDataSource.Alarms)
-                foreach (var emptyStop in alarm.Stops.Where(stop => stop.Name.Length == 0))
-                    alarm.Stops.Remove(emptyStop);
+			SolidColorBrush Red = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
+			SolidColorBrush StandardColor = (SolidColorBrush)Application.Current.Resources["SystemControlForegroundChromeDisabledLowBrush"];
+			Boolean valid = true;
+			if (Stop0.Text.Length == 0)
+			{
+				Stop0.BorderBrush = Red;
+				valid = false;
+			}
+			else
+			{
+				Stop0.BorderBrush = StandardColor;
+			}
+			if (Stop2.Text.Length == 0)
+			{
+				Stop2.BorderBrush = Red;
+				valid = false;
+			}
+			else
+			{
+				Stop2.BorderBrush = StandardColor;
+			}
+			if (!valid)
+			{
+				e.Cancel = true;
+			}
+			else
+			{
+				foreach (var alarm in SampleDataSource.Alarms)
+					foreach (var emptyStop in alarm.Stops.Where(stop => stop.Name.Length == 0))
+						alarm.Stops.Remove(emptyStop);
+			}
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-        }
-    }
-
-    public class StringTimeConverter : IValueConverter
-    {
-        object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
-        {
-            TimeSpan toBeReturned;
-            TimeSpan.TryParse(value.ToString(), out toBeReturned);
-            return toBeReturned;
-        }
-
-        object IValueConverter.ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            return value.ToString();
         }
     }
 }
