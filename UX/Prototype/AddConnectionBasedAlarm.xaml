@@ -2,6 +2,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Prototype"
+    xmlns:Converters="using:Prototype.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
@@ -13,7 +14,7 @@
 
     <Page.Resources>
         <SampleConnections:SampleConnections x:Key="SampleConnections" d:IsDataSource="True" x:Name="SampleConnections"/>
-        <local:StringTimeConverter x:Key="StringTimeConverter"/>
+        <Converters:StringTimeConverter x:Key="StringTimeConverter"/>
         <local:TimeFormatter x:Key="TimeFormatter"/>
         <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True" x:Name="SampleDataSource"/>
     </Page.Resources>
