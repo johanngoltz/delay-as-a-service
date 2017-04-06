@@ -21,6 +21,7 @@
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <PackageCertificateThumbprint>92EFA0A4AB358A355D147258C0CE0FB7F93EA2FB</PackageCertificateThumbprint>
+    <HockeyAppResourceId>03150b73f51e4ab3b0f48881ac1cac9b</HockeyAppResourceId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
