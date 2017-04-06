@@ -12,23 +12,8 @@
     x:Name="uc">
 
     <StackPanel Orientation="Horizontal">
-        <Interactivity:Interaction.Behaviors>
-            <Core:DataTriggerBehavior Binding="{Binding From, ElementName=uc, FallbackValue=00:00}" Value="{Binding Till, ElementName=uc, FallbackValue=00:00}" ComparisonCondition="NotEqual">
-                <Core:ChangePropertyAction PropertyName="Visibility" TargetObject="{Binding ElementName=seperatorTextBlock}">
-                    <Core:ChangePropertyAction.Value>
-                        <Visibility>Visible</Visibility>
-                    </Core:ChangePropertyAction.Value>
-                </Core:ChangePropertyAction>
-                <Core:ChangePropertyAction PropertyName="Visibility" TargetObject="{Binding ElementName=tillTextBlock}">
-                    <Core:ChangePropertyAction.Value>
-                        <Visibility>Visible</Visibility>
-                    </Core:ChangePropertyAction.Value>
-                </Core:ChangePropertyAction>
-            </Core:DataTriggerBehavior>
-        </Interactivity:Interaction.Behaviors>
         <TextBlock Text="{Binding From, ElementName=uc, FallbackValue=00:00}" Style="{StaticResource AlarmListWhenStyle}"/>
-        <TextBlock x:Name="seperatorTextBlock" Text="bis" Margin="3,0" Style="{StaticResource AlarmListWhenStyle}">
-        </TextBlock>
+        <TextBlock x:Name="seperatorTextBlock" Text="bis" Margin="3,0" Style="{StaticResource AlarmListWhenStyle}"/>
         <TextBlock x:Name="tillTextBlock" Text="{Binding Till, ElementName=uc, FallbackValue=00:00}" Style="{StaticResource AlarmListWhenStyle}"/>
     </StackPanel>
 </UserControl>
