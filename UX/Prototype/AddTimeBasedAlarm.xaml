@@ -3,14 +3,15 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Prototype"
-    xmlns:customControls="using:Prototype.Controls"
+    xmlns:CustomControls="using:Prototype.Controls"
+    xmlns:Converters="using:Prototype.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:SampleData="using:Blend.SampleData.SampleDataSource"
     mc:Ignorable="d">
     <Page.Resources>
-        <local:StringTimeConverter x:Key="StringTimeConverter"/>
+        <Converters:StringTimeConverter x:Key="StringTimeConverter"/>
         <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True" x:Name="SampleDataSource"/>
     </Page.Resources>
     <Page.DataContext>
@@ -43,8 +44,8 @@
                 <CalendarDatePicker HorizontalAlignment="Left" Margin="113,490,0,0" VerticalAlignment="Top" Width="237"/>
                 <RadioButton Content="Werktags" HorizontalAlignment="Left" Margin="10,521,0,0" VerticalAlignment="Top" Width="46"/>
                 <RadioButton Content="Wochenende" HorizontalAlignment="Left" Margin="10,552,0,0" VerticalAlignment="Top" Width="46"/>
-                <RadioButton Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46" IsChecked="True"/>
-                <customControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}"/>
+                <RadioButton x:Name="weeklyRadio" Content="Wöchentlich" HorizontalAlignment="Left" Margin="10,583,0,0" VerticalAlignment="Top" Width="46" IsChecked="True"/>
+                <CustomControls:WeekdaySelector Margin="35,610,15,0" VerticalAlignment="Top" DataContext="{Binding Time.Interval.Days, Mode=TwoWay}" IsEnabled="{Binding IsChecked, ElementName=weeklyRadio}"/>
                 <Button HorizontalAlignment="Right" Margin="100,660,10,10" VerticalAlignment="Top" x:Name="addTimeAlarmButton">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
