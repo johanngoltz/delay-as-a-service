@@ -34,48 +34,43 @@ namespace Prototype
                 newAlarm.Stops.Add(item);
 
             this.InitializeComponent();
+
+            SampleDataSource.Alarms.Clear();
+            SampleDataSource.Alarms.Add(newAlarm);
         }
 
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
             base.OnNavigatingFrom(e);
 
-			SolidColorBrush Red = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
-			SolidColorBrush StandardColor = (SolidColorBrush)Application.Current.Resources["SystemControlForegroundChromeDisabledLowBrush"];
-			Boolean valid = true;
-			if (Stop0.Text.Length == 0)
-			{
-				Stop0.BorderBrush = Red;
-				valid = false;
-			}
-			else
-			{
-				Stop0.BorderBrush = StandardColor;
-			}
-			if (Stop2.Text.Length == 0)
-			{
-				Stop2.BorderBrush = Red;
-				valid = false;
-			}
-			else
-			{
-				Stop2.BorderBrush = StandardColor;
-			}
-			if (!valid)
-			{
-				e.Cancel = true;
-			}
-			else
-			{
-				foreach (var alarm in SampleDataSource.Alarms)
-					foreach (var emptyStop in alarm.Stops.Where(stop => stop.Name.Length == 0))
-						alarm.Stops.Remove(emptyStop);
-			}
-        }
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            base.OnNavigatedFrom(e);
+            if (e.NavigationMode != NavigationMode.Back)
+            {
+                SolidColorBrush Red = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
+                SolidColorBrush StandardColor = (SolidColorBrush)Application.Current.Resources["SystemControlForegroundChromeDisabledLowBrush"];
+                Boolean valid = true;
+                if (Stop0.Text.Length == 0)
+                {
+                    Stop0.BorderBrush = Red;
+                    valid = false;
+                }
+                else
+                {
+                    Stop0.BorderBrush = StandardColor;
+                }
+                if (Stop2.Text.Length == 0)
+                {
+                    Stop2.BorderBrush = Red;
+                    valid = false;
+                }
+                else
+                {
+                    Stop2.BorderBrush = StandardColor;
+                }
+                if (!valid)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

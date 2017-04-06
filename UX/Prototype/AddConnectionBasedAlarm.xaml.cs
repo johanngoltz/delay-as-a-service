@@ -39,7 +39,7 @@ namespace Prototype
 			DatePicker.Date = DateTime.Now;
 
 			SampleDataSource.Alarms.Clear();
-			SampleDataSource.Alarms.Insert(0, newAlarm);
+            SampleDataSource.Alarms.Add(newAlarm);
         }
 
 		public void GenerateConnections()
@@ -92,42 +92,41 @@ namespace Prototype
 		protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
 		{
 			base.OnNavigatingFrom(e);
-			SolidColorBrush Red = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
-			SolidColorBrush StandardColor = (SolidColorBrush)Application.Current.Resources["SystemControlForegroundChromeDisabledLowBrush"];
-			Boolean valid = true;
-			if (Stop0.Text.Length == 0)
-			{
-				Stop0.BorderBrush = Red;
-				valid = false;
-			}
-			else
-			{
-				Stop0.BorderBrush = StandardColor;
-			}
-			if (Stop2.Text.Length == 0)
-			{
-				Stop2.BorderBrush = Red;
-				valid = false;
-			}
-			else
-			{
-				Stop2.BorderBrush = StandardColor;
-			}
-			if (!valid)
-			{
-				e.Cancel = true;
-			}
-			else
-			{
 
-				SampleDataSource.Alarms[0].Time.Departure.Earliest = (connectionList.ItemsSource as Connection)[connectionList.SelectedIndex].StartTime;
-				SampleDataSource.Alarms[0].Time.Departure.Latest = (connectionList.ItemsSource as Connection)[connectionList.SelectedIndex].EndTime;
-			}
-		}
+            if (e.NavigationMode != NavigationMode.Back)
+            {
+                SolidColorBrush Red = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
+                SolidColorBrush StandardColor = (SolidColorBrush)Application.Current.Resources["SystemControlForegroundChromeDisabledLowBrush"];
+                Boolean valid = true;
+                if (Stop0.Text.Length == 0)
+                {
+                    Stop0.BorderBrush = Red;
+                    valid = false;
+                }
+                else
+                {
+                    Stop0.BorderBrush = StandardColor;
+                }
+                if (Stop2.Text.Length == 0)
+                {
+                    Stop2.BorderBrush = Red;
+                    valid = false;
+                }
+                else
+                {
+                    Stop2.BorderBrush = StandardColor;
+                }
+                if (!valid)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
 
-		protected override void OnNavigatedFrom(NavigationEventArgs e)
-		{
-			base.OnNavigatedFrom(e);
+                    SampleDataSource.Alarms[0].Time.Departure.Earliest = (connectionList.ItemsSource as Connection)[connectionList.SelectedIndex].StartTime;
+                    SampleDataSource.Alarms[0].Time.Departure.Latest = (connectionList.ItemsSource as Connection)[connectionList.SelectedIndex].EndTime;
+                }
+            }
 		}
 	}
 
