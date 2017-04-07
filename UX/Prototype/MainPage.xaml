@@ -9,7 +9,7 @@
     x:Class="Prototype.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
-        <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
+        <SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True" x:Name="SampleData"/>
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource SampleDataSource}}">
         <Grid>

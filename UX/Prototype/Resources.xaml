@@ -93,4 +93,7 @@
             <controls:TimeDisplay From="{Binding Time.Departure, FallbackValue=6:45}" Till="{Binding Time.Arrival, FallbackValue=7:12}" RelativePanel.RightOf="Separator" RelativePanel.Below="Route"/>
         </RelativePanel>
     </DataTemplate>
+    <Style TargetType="TextBox" x:Key="InvalidTextBoxStyle">
+        <Setter Property="BorderBrush" Value="Red"/>
+    </Style>
 </ResourceDictionary>

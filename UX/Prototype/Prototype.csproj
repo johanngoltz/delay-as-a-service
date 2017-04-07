@@ -21,6 +21,7 @@
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <PackageCertificateThumbprint>92EFA0A4AB358A355D147258C0CE0FB7F93EA2FB</PackageCertificateThumbprint>
+    <HockeyAppResourceId>03150b73f51e4ab3b0f48881ac1cac9b</HockeyAppResourceId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -113,6 +114,7 @@
     <Compile Include="Controls\WeekdaySelector.xaml.cs">
       <DependentUpon>WeekdaySelector.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\StringTimeConverter.cs" />
     <Compile Include="CreateAlarmPage.xaml.cs">
       <DependentUpon>CreateAlarmPage.xaml</DependentUpon>
     </Compile>
@@ -132,7 +134,6 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\WaypointTypeConverter.cs" />
     <Compile Include="Selectors\WordListItemTemplateSelector.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -246,7 +247,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Converters\Themes\" />
     <Folder Include="SampleData\SampleConnections\SampleConnections_Files\" />
   </ItemGroup>
   <ItemGroup>
